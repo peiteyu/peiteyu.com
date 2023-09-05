@@ -7,6 +7,16 @@
     overflow-x: hidden;
 }
 
+.loading video
+{
+    width: 100%;
+    min-height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -156,6 +166,7 @@ header{
     justify-content: center;
     margin: 5px;
 }
+
 .navbar ul li{
     list-style: none;
     margin: 30px;
@@ -168,12 +179,21 @@ header{
     transition-delay: 1s;
 }
 
-/* 關於葵地淇 */
+a{
+    cursor: pointer;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
 section{
     width: 100%;
     height: auto;
     position: relative;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
 }
+/* 關於葵地淇 */
 
 .container_see{
     width: 100%;
@@ -244,6 +264,8 @@ section{
 }
 
 .container_see #container_p{
+    font-size: 2em;
+    font-weight: 900;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .2s;
     transition-delay: .2s;
     opacity: 1;
@@ -284,7 +306,7 @@ section{
     width: 132px;
 }
 
-.container_see .function_explanation .human_img #img1:hover{
+/* .container_see .function_explanation .human_img #img1:hover{
     filter: saturate(110%);
     width:200px;
 }
@@ -302,7 +324,7 @@ section{
 .container_see .function_explanation .human_img #img4:hover{
     filter: saturate(110%);
     width:170px;
-}
+} */
    
 .function_explanation .humaninfo{
     display: flex;
@@ -680,39 +702,63 @@ section .card_container .card_container_info:hover p{
 }
 
 .container_listen .listen_info .listen_info_box{
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 340px;
     border-radius: 20px;
     margin: 20px;
     overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
     position: relative;
     transition: .5s ease-in-out;
 }
 
-.container_listen .listen_info .listen_info_box .box1{
+.container_listen .listen_info .listen_info_box img{
     width: 300px;
     height: 300px;
     border-radius: 20px;
-    position: absolute;
-    top:0px;
-    left: 0px;
+    margin: 20px;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    transition: .5s ease-in-out;
+}
+
+.container_listen .listen_info .listen_info_box:hover{
+    width: 600px;
+}
+
+.container_listen .listen_info .listen_info_box .box1{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #000000;
     overflow: hidden;
     transition: .5s ease-in-out;
 }
 
-.container_listen .listen_info .listen_info_box p{
-    color: #fff;
-    font-size: 4em;
+.container_listen .listen_info .listen_info_box .box1 p:nth-child(1){
+    margin: 20px;
+    width: 200px;
+    height: auto;
+    transition: .5s ease-in-out;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #000000;
 }
 
-.container_listen .listen_info .listen_info_box a{
+.container_listen .listen_info .listen_info_box .box1 a{
+    margin-top: 20px;
     text-decoration: none;
-    color: #fff;
+    color: #000000;
     font-size: 1em;
 }
 
@@ -721,12 +767,7 @@ section .card_container .card_container_info:hover p{
     z-index: 999;
 }
 
-.container_listen .listen_info .listen_info_box:hover .box1{
-    background: rgba(0, 0, 0, 0.25);
-    transition: .5s ease-in-out;
-}
-
-.container_listen .listen_info img{
+/* .container_listen .listen_info img{
     width: 100%;
     height: 100%;
 }
@@ -885,7 +926,7 @@ section .card_container .card_container_info:hover p{
     color: #fff;
     position: relative;
     top: 150px;
-    left: 25px;
+    left: 100px;
     background: #000000;
     letter-spacing: 2px;
     font-weight: 500;
@@ -933,23 +974,39 @@ section .card_container .card_container_info:hover p{
     width: 100%;
     height: 900px;
     position: relative;
+    overflow: hidden;
 }
 
 .container_environment .img_enviroment_box img{
     width: 100%;
     position: absolute;
     opacity: 0;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 2s
 }
 
 .container_environment .img_enviroment_box .img_title{
     position: absolute;
-    top:0px;
-    left: 0px;
-    top: 50%;
-    transform: translateY(-50%);
+    left: 15%;
+    top: 30%;
+    transform: translateY(-30%);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 20px;
     z-index: 3;
-    background: #ffffff;
+    font-size: 4em;
+    font-weight: 900;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+}
+
+.container_environment .img_enviroment_box .img_subtitle{
+    position: absolute;
+    left: 17.777%;
+    top: 45%;
+    transform: translateY(-45%);
+    z-index: 3;
+    font-size: 2em;
+    font-weight: 900;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
 }
 
 .prev-button,.next-button{
@@ -1192,6 +1249,10 @@ section .card_container .card_container_info:hover p{
 
     .container_listen .listen_info{
         height: auto;
+    }
+
+    .container_environment .img_enviroment_box{
+        max-height: 712px;
     }
 }
 
