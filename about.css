@@ -121,8 +121,8 @@ html {
     align-items: center;
     justify-content: center;
     position: absolute;
-    top:150px;
-    left: 100px;
+    top:50px;
+    left: 50px;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
 }
 
@@ -141,13 +141,13 @@ html {
 
 .company_container .left_company_info .question h1,
 .company_container .right_company_info .question h1{
-    font-size: 2.5em;
+    font-size: 2em;
     padding: 20px;
 }
 
 .company_container .left_company_info .question p,
 .company_container .right_company_info .question p{
-    font-size: 20px;
+    font-size: 16px;
     padding: 20px;
     background: #ffffff;
 }
@@ -183,10 +183,11 @@ html {
 
 .company_container .middle_company_info{
     max-width: 30%;
-    min-height: 400px;
+    height: 600px;
     border-radius: 20px;
     position: relative;
     box-shadow: 10px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
 }
 
 .company_container .middle_company_info .company_img img{
