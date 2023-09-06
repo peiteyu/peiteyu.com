@@ -43,6 +43,7 @@ html {
     align-items: center;
     justify-content: center;
     transition: 0.5s ease;
+    z-index:999;
 }
 
 .home .logo{
