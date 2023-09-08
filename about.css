@@ -43,7 +43,7 @@ html {
     align-items: center;
     justify-content: center;
     transition: 0.5s ease;
-    z-index:999;
+    z-index: 999;
 }
 
 .home .logo{
@@ -57,6 +57,24 @@ html {
 
 .home:hover{
     transform: scale(1.1);
+}
+
+.hambur {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #000000;
+    border-radius: 10px;
+    z-index: 999;
+    overflow: hidden;
+    display: none;
+}
+
+.hambur svg {
+    width: 100%;
+    height: 100%;
 }
 
 .navbar{
@@ -200,4 +218,70 @@ html {
     position: absolute;
     right: 0px;
     top:100px;
+}
+
+@media screen and (min-width:200px) and (max-width:857px) {
+    .home {
+        top: -12px;
+        left: -10px;
+        scale: .6;
+    }
+
+    .hambur {
+        position: fixed;
+        display: block;
+        z-index: 999;
+    }
+
+    .navbar {
+        opacity: 0;
+    }
+
+    .navbar.active {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100vh;
+        background: #138353;
+        opacity: 1;
+        z-index: 998;
+    }
+
+    .navbar #myList{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:360px) and (max-width:430px){
+    .company_container .middle_company_info{
+        display: none;
+    }
+
+    .company_container{
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .company_container .left_company_info .question h1, .company_container .right_company_info .question h1{
+        font-size: 1em;
+        padding: 20px;
+    }
+
+    .company_container .left_company_info .question.Q1, .company_container .left_company_info .question.Q2{
+        height: 60px;
+    }
+
+    .company_container .left_company_info .question.Q1:hover{
+        height: 400px;
+        overflow-y: scroll;
+    }
+
+    .company_container .left_company_info, .company_container .right_company_info{
+        flex-direction: column;
+        width: 100%;
+    }
 }

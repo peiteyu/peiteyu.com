@@ -26,3 +26,16 @@ window.addEventListener('scroll', function() {
     up.innerHTML = "scroll";
   }
 });
+
+const hambur = document.getElementById('hambur_active');
+const navbar = document.getElementById('navbar_active');
+hambur.addEventListener('click',function(){
+    if(!hambur.classList.contains('active')){
+        hambur.classList.add('active');
+        navbar.classList.add('active');
+    }
+    else{
+        hambur.classList.remove('active');
+        navbar.classList.remove('active');
+    }
+})

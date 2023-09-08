@@ -65,7 +65,7 @@ find_Tainan.addEventListener('click',function(){
     find_chiayi.classList.remove('active');
 })
 
-
+// 選單
 const hambur = document.getElementById('hambur_active');
 const navbar = document.getElementById('navbar_active');
 hambur.addEventListener('click',function(){
@@ -101,10 +101,10 @@ function showImage(index) {
   });
   const currentText1 = images[index].getAttribute('data-h1');
   const textContainer1 = document.querySelector('.img_title');
-  const currentText2 = images[index].getAttribute('data-h2');
+  // const currentText2 = images[index].getAttribute('data-h2');
   const textContainer2 = document.querySelector('.img_subtitle');
   textContainer1.textContent = currentText1;
-  textContainer2.textContent = currentText2;
+  // textContainer2.textContent = currentText2;
 }
 
 
