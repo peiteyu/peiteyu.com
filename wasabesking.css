@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     overflow-x: hidden;
+    letter-spacing: 1.5px;
 }
 
 .toTop{
@@ -156,6 +157,16 @@ header{
     background: #00a6ff;
     color: #ffffff;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    animation: test cubic-bezier(0.075, 0.82, 0.165, 1) 10s;
+}
+
+@keyframes test {
+    0%{
+        background: transparent;
+    }
+    100%{
+        background: #ff0000;
+    }
 }
 
 .navbar{
@@ -282,23 +293,85 @@ section{
     writing-mode: vertical-lr;
 }
 
-.container_see #container_p{
+.container_see .Preface{
+    max-width: 77.77%;
+    height: auto;
+    position: relative;
+    top:0px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.container_see .Preface::before{
+    content: '';
+    position: absolute;
+    bottom:0px;
+    right: 0px;
+    width: 0;
+    height: 0;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 0px 0px 100px 100px;
+    border-color: transparent transparent #1ebf77 transparent;
+}
+
+.container_see .Preface p{
+    width: 60%;
+    margin-top: 60px;
+    font-size: 1em;
+    line-height: 2;
+    letter-spacing: 1.5px;
+}
+
+.container_see .Preface img{
+    padding: 20px;
+    width: 40%;
+}
+
+/* .container_see #container_p{
     width: 600px;
     position: absolute;
     top: 90px;
     left: 40%;
     font-weight: 900;
     font-size: 2em;
-}
+} */
 
 .container_see .wasabi_brief_intro{
-    max-width: 66.666%;
+    max-width: 77.77%;
     min-height: 1200px;
     position: relative;
     top:-20px;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 20px;
+}
+
+.container_see .wasabi_brief_intro .wasabi_text .grow_img{
+    /* width: 66.66%; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_see .wasabi_brief_intro .wasabi_text .grow_img img{
+    width: 10%;
+}
+
+.container_see .wasabi_brief_intro .wasabi_text .shape_img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_see .wasabi_brief_intro .wasabi_text .shape_img img{
+    width: 10%;
 }
 
 .container_see .wasabi_brief_intro .real_img{
@@ -308,14 +381,14 @@ section{
 }
 
 .container_see .wasabi_brief_intro .real_img img{
-    width: 100%;
-    margin: 20px;
+    width: 80%;
+    margin: 10px;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
 }
 
 
 .container_see .wasabi_brief_intro .real_img img:hover{
-    width: 101%;
+    width: 100%;
 }
 
 
@@ -341,9 +414,10 @@ section{
 }
 
 .container_see .wasabi_brief_intro .wasabi_text h1{
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 900;
-    margin: 20px 0px 40px 0px;
+    margin: 0px 0px 0px 20px;
+    text-align: center;
 }
 
 .container_see .wasabi_brief_intro .wasabi_text p{
@@ -533,8 +607,8 @@ section .card_container{
 }
 
 section .card_container .card_container_info{
-    width: 500px;
-    min-height: 800px;
+    max-width: 320px;
+    min-height: 600px;
     border-radius: 20px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -591,13 +665,19 @@ section .card_container .card_container_info .card_info_subtitle p{
     transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
     opacity: 0;
     font-size: 20px;
+    line-height: 2;
+}
+
+section .card_container .card_container_info .card_info_subtitle p span{
+    color: #1D8257;
+    font-weight: 900;
 }
 
 section .card_container .card_container_info:hover p{
     opacity: 1;
     z-index: 999;
     color: #000000;
-    background: #1D8257;
+    background: #a1f4d0;
     padding: 20px;
     border-radius: 10px;
 }
@@ -605,9 +685,23 @@ section .card_container .card_container_info:hover p{
 .listen_share{
     font-size: 3em;
     position: relative;
-    left: 36%;
+    text-align: center;
     margin-top: 100px;
 }
+
+.listen_share p{
+    font-size: 16px;
+    position: relative;
+    text-align: center;
+    margin: 50px;
+}
+
+.listen_share span{
+    font-size: 20px;
+    color: #1D8257;
+    font-weight: 900;
+}
+
 
 .listen_info{
     width: 100%;

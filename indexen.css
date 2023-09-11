@@ -120,34 +120,34 @@ header {
 .left_title {
     position: absolute;
     top: 50%;
-    left: 20%;
+    left: 30%;
     transform: translate(-50%, -20%);
     display: flex;
     flex-direction: column;
-    color: #fff;
+    color: #000000;
     letter-spacing: 2px;
     animation: 1s out;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
 }
 
 .left_title h4 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 @keyframes out {
     0% {
-        left: 10%;
+        left: 25%;
     }
 
     100% {
-        left: 20%;
+        left: 30%;
     }
 }
 
 .left_title h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 800;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -860,7 +860,7 @@ section .card_container .card_container_info:hover p {
     width: 200px;
     height: auto;
     transition: .5s ease-in-out;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 500;
     color: #000000;
 }
@@ -869,6 +869,7 @@ section .card_container .card_container_info:hover p {
     margin-top: 20px;
     text-decoration: none;
     color: #000000;
+    background: #138353;
     font-size: 1em;
 }
 
@@ -1107,6 +1108,7 @@ section .card_container .card_container_info:hover p {
     font-size: 4em;
     font-weight: 900;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+    color: #fff;
 }
 
 .container_environment .img_enviroment_box .img_subtitle {
@@ -1202,22 +1204,22 @@ section .card_container .card_container_info:hover p {
 }
 
 .more_information .info_contact .top_en_title {
-    font-size: 2em;
+    font-size: 1em;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
 .more_information .info_contact .top_en_title .dot {
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background: #FF1515;
     margin-left: 10px;
 }
 
 .more_information .info_contact .top_ch_title {
-    font-size: 4em;
+    font-size: 2em;
 }
 
 .more_information .info_contact .medium1,
@@ -1272,7 +1274,7 @@ section .card_container .card_container_info:hover p {
 .more_information .bottom_info {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     position: relative;
     justify-content: space-evenly;

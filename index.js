@@ -101,10 +101,8 @@ function showImage(index) {
   });
   const currentText1 = images[index].getAttribute('data-h1');
   const textContainer1 = document.querySelector('.img_title');
-  // const currentText2 = images[index].getAttribute('data-h2');
   const textContainer2 = document.querySelector('.img_subtitle');
   textContainer1.textContent = currentText1;
-  // textContainer2.textContent = currentText2;
 }
 
 
@@ -121,10 +119,3 @@ nextbutton.addEventListener('click', () => {
 });
 
 showImage(currentIndex);
-
-
-  
-  
-  
-  
-  
