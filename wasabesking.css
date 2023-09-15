@@ -297,7 +297,7 @@ section{
     max-width: 77.77%;
     height: auto;
     position: relative;
-    top:-200px;
+    top:0px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -345,7 +345,7 @@ section{
     max-width: 77.77%;
     min-height: 1200px;
     position: relative;
-    top: -180px;
+    top:-20px;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 20px;

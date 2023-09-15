@@ -27,6 +27,10 @@ html {
     box-shadow: transparent;
 }
 
+body{
+    background:url(pruebg.jpg);
+}
+
 .toTop {
     width: 80px;
     height: 100px;
@@ -140,8 +144,8 @@ html {
 }
 
 .home .logo {
-    width: 100px;
-    height: 100px;
+    width: 400px;
+    height: 400px;
 }
 
 .home .logo img {
@@ -191,6 +195,7 @@ a {
 
 .document img {
     width: 600px;
+    border-radius: 20px;
 }
 
 .document .artitcle {
@@ -202,6 +207,12 @@ a {
     display: flex;
     flex-direction: row;
     margin: 20px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+}
+
+.document .artitcle .div:hover{
+    font-size: 18px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
 }
 
 .document .artitcle .div a {
