@@ -7,6 +7,10 @@
     letter-spacing: 1.5px;
 }
 
+body{
+    background: #000000;
+}
+
 .toTop{
     width: 80px;
     height: 100px;
@@ -243,19 +247,20 @@ section{
 
 .container_see .left_section_title{
     width: 65px;
-    height: 365px;
+    height: 290px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #fff;
-    position: relative;
+    color: #000000;
+    position: absolute;
     top:0px;
     left: 10px;
-    background: #000000;
+    background: #ffffff;
     letter-spacing: 2px;
     font-weight: 500;
     font-size: 1.5em;
     z-index: 2;
+    border-radius: 0px 0px 20px 20px;
 }
 
 .container_see .left_section_title #see{
@@ -284,7 +289,7 @@ section{
     height: 0;
     border-style: solid;
     border-width: 13.9px 8px 0 8px;
-    border-color: #ffffff transparent transparent transparent;
+    border-color: #000000 transparent transparent transparent;
     border-radius: 2px;
 }
 
@@ -297,13 +302,13 @@ section{
     max-width: 77.77%;
     height: auto;
     position: relative;
-    top:0px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    margin-top: 60px;
 }
 
 .container_see .Preface::before{
@@ -317,6 +322,7 @@ section{
     border-style: solid;
     border-width: 0px 0px 100px 100px;
     border-color: transparent transparent #1ebf77 transparent;
+    z-index: 1;
 }
 
 .container_see .Preface p{
@@ -325,6 +331,7 @@ section{
     font-size: 1em;
     line-height: 2;
     letter-spacing: 1.5px;
+    z-index: 2;
 }
 
 .container_see .Preface img{
@@ -332,23 +339,22 @@ section{
     width: 40%;
 }
 
-/* .container_see #container_p{
-    width: 600px;
-    position: absolute;
-    top: 90px;
-    left: 40%;
-    font-weight: 900;
-    font-size: 2em;
-} */
+.container_see #container_p{
+    color: #ffffff;
+}
 
 .container_see .wasabi_brief_intro{
     max-width: 77.77%;
     min-height: 1200px;
     position: relative;
-    top:-20px;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 20px;
+    margin-top: 60px;
+}
+
+.container_see .wasabi_brief_intro .wasabi_text{
+    color: #FFFFFF;
 }
 
 .container_see .wasabi_brief_intro .wasabi_text .grow_img{
@@ -492,6 +498,7 @@ section{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    color: rgb(255, 255, 255)
 }
 
 .function_explanation .human{
@@ -687,6 +694,14 @@ section .card_container .card_container_info:hover p{
     position: relative;
     text-align: center;
     margin-top: 100px;
+    color: #FFFFFF;
+}
+
+.listen_share{
+    font-size: 3em;
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
 }
 
 .listen_share p{
@@ -705,13 +720,18 @@ section .card_container .card_container_info:hover p{
 
 .listen_info{
     width: 100%;
-    height: 700px;
+    height: auto;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
+    color: #ffffff;
+}
+
+.listen_info:hover{
+    width: 100%;
 }
 
 .listen_info .listen_info_box{
@@ -733,7 +753,6 @@ section .card_container .card_container_info:hover p{
     height: 300px;
     border-radius: 20px;
     margin: 20px;
-    /* overflow: hidden; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -765,13 +784,13 @@ section .card_container .card_container_info:hover p{
     transition: .5s ease-in-out;
     font-size: 2em;
     font-weight: 500;
-    color: #000000;
+    color: #ffffff;
 }
 
 .listen_info .listen_info_box .box1 a{
     margin-top: 20px;
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     font-size: 1em;
 }
 
@@ -783,7 +802,7 @@ section .card_container .card_container_info:hover p{
 .more_information{
     width: 90%;
     height: 600px;
-    background: #000000;
+    background: rgb(0 71 21);
     margin: 20px;
     position: relative;
     left: 50%;
@@ -796,7 +815,7 @@ section .card_container .card_container_info:hover p{
     border-radius: 20px;
 }
 
-.more_information .top_time{
+/* .more_information .top_time{
     position: absolute;
     top:20px;
     color: #ffffff;
@@ -813,7 +832,7 @@ section .card_container .card_container_info:hover p{
 .more_information .top_time ul li{
     list-style: none;
     margin: 10px;
-}
+} */
 
 .more_information .info_message{
     display: flex;
@@ -930,6 +949,7 @@ section .card_container .card_container_info:hover p{
 
     .navbar {
         opacity: 0;
+        z-index: -999;
     }
 
     .navbar.active {

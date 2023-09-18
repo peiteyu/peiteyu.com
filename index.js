@@ -16,18 +16,6 @@ window.addEventListener('load', function() {
     });
 });
 
-
-const see = document.getElementById('see');
-const eat = document.getElementById('eat');
-const listen = document.getElementById('find');
-const find = document.getElementById('find');
-const container_p = document.getElementById('container_p');
-
-const initialLeftlisten = parseInt(getComputedStyle(listen).left);
-const initialLeftfind = parseInt(getComputedStyle(find).left);
-const initialLefteat = window.innerWidth <= 820 ? -300 : -500; // 根據視窗大小調整初始位置
-
-
 window.addEventListener('scroll', function() {
     const windowHeight = window.scrollY;
     if (windowHeight > 400){
@@ -37,12 +25,6 @@ window.addEventListener('scroll', function() {
       toTop.style.rotate = "90deg";
       up.innerHTML = "scroll";
     }
-    if (windowHeight > 2700) {
-      eat.style.animation = 'slideInLeft 1s ease-out forwards';
-    } else {
-      eat.style.animation = 'none';
-    }
-    console.log(windowHeight);
 });
 
 const find_chiayi = document.getElementById('Chiayi');
@@ -79,6 +61,8 @@ hambur.addEventListener('click',function(){
     }
 })
 
+
+//圖片切換
 
 const imgContainer = document.querySelector('.img_enviroment_box');
 const prebutton = document.querySelector('.prev-button');
@@ -119,3 +103,25 @@ nextbutton.addEventListener('click', () => {
 });
 
 showImage(currentIndex);
+
+
+//JS動畫
+
+const eatPosition = document.getElementById('eat'); // 通过ID或选择器选择元素
+const agentTitle = document.getElementById('agentTitle');
+const holmes = document.getElementById('holmes');
+const ma = document.getElementById('ma');
+
+window.addEventListener('scroll', function () {
+  const windowHeight = window.scrollY;
+  if (windowHeight >= 250) {
+    eatPosition.style.top = "0px"; // 移动元素到頂部
+    agentTitle.style.transform = "translateX(-50%) rotate(0deg) scale(1)";
+  } else {
+    eatPosition.style.top = "-240px"; // 这里可以根据你的需求设置一个隐藏位置
+    agentTitle.style.transform = "translateX(950px) rotate(45deg) scale(1.2)";
+  }
+
+  holmes.style.top = windowHeight + "px";
+  
+});

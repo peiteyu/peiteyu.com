@@ -6,6 +6,11 @@
     overflow-x: hidden;
 }
 
+body{
+    /* background: linear-gradient( #000000,#09623b); */
+    background: #000000;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -20,7 +25,7 @@ html {
 
 ::-webkit-scrollbar-thumb {
     border-radius: 4px;
-    background-color: #1D8257;
+    background-color: #000000;
 }
 
 ::-webkit-scrollbar-track {
@@ -39,12 +44,13 @@ html {
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
 }
 
-.toTop img {
-    width: 100%;
+.toTop svg {
+    width: 100px;
     padding: 20px;
 }
 
 .toTop h2 {
+    color: #ffffff;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
 }
 
@@ -94,7 +100,7 @@ header {
 }
 
 .home {
-    position: absolute;
+    position: fixed;
     top: 30px;
     left: 30px;
     display: flex;
@@ -102,11 +108,12 @@ header {
     align-items: center;
     justify-content: center;
     transition: 0.5s ease;
+    z-index: 999;
 }
 
 .home .logo {
     width: 400px;
-    height: 400px;
+    height: auto;
 }
 
 .home .logo img {
@@ -124,7 +131,7 @@ header {
     transform: translate(-50%, -20%);
     display: flex;
     flex-direction: column;
-    color: #000000;
+    color: #fff;
     letter-spacing: 2px;
     animation: 1s out;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
@@ -138,7 +145,7 @@ header {
 
 @keyframes out {
     0% {
-        left: 25%;
+        left: 20%;
     }
 
     100% {
@@ -147,13 +154,13 @@ header {
 }
 
 .left_title h1 {
-    font-size: 3rem;
+    font-size: 2.5em;
     font-weight: 800;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .left_title h6 {
-    font-size: 2rem;
+    font-size: 1.5em;
     font-weight: 500;
     background: #00a6ff;
     color: #ffffff;
@@ -163,11 +170,14 @@ header {
 .navbar {
     width: auto;
     height: auto;
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 20px;
     color: #000000;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+    z-index: 999;
+    background: #138353;
+    border-radius: 20px;
 }
 
 .navbar #myList {
@@ -226,19 +236,19 @@ section {
 /* 全球代理商 */
 #s1 .left_section_title {
     width: 65px;
-    height: 365px;
+    height: 255px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #fff;
-    position: relative;
-    top: 0px;
+    color: #000000;
+    position:absolute;
     left: 10px;
-    background: #000000;
+    background: #ffffff;
     letter-spacing: 2px;
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 1em;
     z-index: 2;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
 }
 
 .Technology_Agent_title {
@@ -246,6 +256,9 @@ section {
     top: 10%;
     left: 50%;
     transform: translateX(-50%);
+    color: #ffffff;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+    transition-delay: 0.5s;
 }
 
 .Technology_Agent_title h1 {
@@ -259,6 +272,7 @@ section {
     flex-wrap: wrap;
     position: relative;
     justify-content: center;
+    margin-top: 240px;
 }
 
 #s1 .boxfor {
@@ -278,6 +292,8 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+    position: relative;
+
 }
 
 #s1 .boxfor.holmes:hover,
@@ -295,6 +311,7 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+    position: relative;
 }
 
 #s1 .boxfor.ma:hover h1 {
@@ -354,7 +371,7 @@ section {
     height: 0;
     border-style: solid;
     border-width: 13.9px 8px 0 8px;
-    border-color: #ffffff transparent transparent transparent;
+    border-color: #000000 transparent transparent transparent;
     border-radius: 2px;
 }
 
@@ -625,25 +642,26 @@ section .card_container .card_container_info:hover p {
 .container_eat {
     width: 100%;
     height: 800px;
-    background: #DAAC7D;
+    background: rgb(55 170 184);;
     position: relative;
+    border-radius: 20px;
     margin: 100px 0px 100px 0px;
 }
 
 .container_eat .left_section_title {
     width: 65px;
-    height: 365px;
+    height: 280px;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #fff;
-    position: relative;
+    position: absolute;
     top: 0px;
     left: 10px;
     background: #000000;
     letter-spacing: 2px;
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 1em;
     z-index: 2;
 }
 
@@ -691,6 +709,7 @@ section .card_container .card_container_info:hover p {
 .container_eat .eat_subtitle {
     width: 600px;
     position: absolute;
+    top:50%;
     right: 30%;
     transform: translateX(-30%);
     z-index: 2;
@@ -753,7 +772,7 @@ section .card_container .card_container_info:hover p {
 /* 真實回饋 */
 .container_listen {
     width: 100%;
-    height: 700px;
+    height: 800px;
     position: relative;
     margin: 100px 0px 100px 0px;
     display: flex;
@@ -763,18 +782,18 @@ section .card_container .card_container_info:hover p {
 
 .container_listen .left_section_title {
     width: 65px;
-    height: 365px;
+    height: 330px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #fff;
+    color: #000000;
     position: absolute;
     top: 0px;
     left: 10px;
-    background: #000000;
+    background: #ffffff;
     letter-spacing: 2px;
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 1em;
     z-index: 2;
 }
 
@@ -791,7 +810,7 @@ section .card_container .card_container_info:hover p {
     height: 0;
     border-style: solid;
     border-width: 13.9px 8px 0 8px;
-    border-color: #ffffff transparent transparent transparent;
+    border-color: #000000 transparent transparent transparent;
     border-radius: 2px;
 }
 
@@ -802,7 +821,7 @@ section .card_container .card_container_info:hover p {
 
 .container_listen .listen_info {
     width: 100%;
-    min-height: 0px;
+    height: auto;
     position: relative;
     display: flex;
     justify-content: center;
@@ -853,6 +872,7 @@ section .card_container .card_container_info:hover p {
     align-items: center;
     overflow: hidden;
     transition: .5s ease-in-out;
+    color: #ffffff;
 }
 
 .container_listen .listen_info .listen_info_box .box1 p:nth-child(1) {
@@ -862,14 +882,13 @@ section .card_container .card_container_info:hover p {
     transition: .5s ease-in-out;
     font-size: 1.5em;
     font-weight: 500;
-    color: #000000;
+    color: #ffffff;
 }
 
 .container_listen .listen_info .listen_info_box .box1 a {
     margin-top: 20px;
     text-decoration: none;
-    color: #000000;
-    background: #138353;
+    color: #ffffff;
     font-size: 1em;
 }
 
@@ -878,34 +897,31 @@ section .card_container .card_container_info:hover p {
     z-index: 999;
 }
 
-/* .container_listen .listen_info img{
-    width: 100%;
-    height: 100%;
-}
 
 /* 我們在哪 */
 .container_find {
     width: 100%;
     height: auto;
     position: relative;
+    border-radius: 20px;
     margin: 100px 0px 100px 0px;
-    background: #DAAC7D;
+    background:rgb(55, 170, 184);
 }
 
 .container_find .left_section_title {
     width: 65px;
-    height: 365px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #fff;
-    position: relative;
+    position: absolute;
     top: 0px;
     left: 10px;
     background: #000000;
     letter-spacing: 2px;
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 1em;
     z-index: 2;
 }
 
@@ -932,16 +948,15 @@ section .card_container .card_container_info:hover p {
 }
 
 .container_find .find_info {
-    max-width: 900px;
+    max-width: 1000px;
     height: auto;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     position: relative;
-    top: -200px;
     left: 50%;
     transform: translateX(-50%);
-    margin: 20px;
+    margin: 100px 0px 100px 0px;
 }
 
 .container_find .find_info .find_top_button {
@@ -961,6 +976,7 @@ section .card_container .card_container_info:hover p {
     align-items: center;
     justify-content: center;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+    cursor: pointer;
 }
 
 .container_find .find_info .find_top_button .find_button.active {
@@ -991,7 +1007,7 @@ section .card_container .card_container_info:hover p {
 .container_find .outside_sea {
     width: 100px;
     height: 80px;
-    font-size: 2em;
+    font-size: 1.5em;
     position: absolute;
     right: 7%;
     top: 50%;
@@ -1035,14 +1051,15 @@ section .card_container .card_container_info:hover p {
     flex-direction: column;
     align-items: center;
     color: #fff;
-    position: relative;
-    top: 165px;
+    position: absolute;
+    top: 0px;
     left: 10px;
     background: #000000;
     letter-spacing: 2px;
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 1em;
     z-index: 2;
+    border-radius: 0px 0px 20px 20px;
 }
 
 .left_section_title .top_word {
@@ -1079,7 +1096,8 @@ section .card_container .card_container_info:hover p {
     width: 100%;
     height: auto;
     position: relative;
-    top: -200px;
+    border-radius: 100px;
+    margin-bottom: 100px;
 }
 
 .container_environment .img_enviroment_box {
@@ -1156,7 +1174,7 @@ section .card_container .card_container_info:hover p {
 .more_information {
     width: 90%;
     height: 600px;
-    background: #000000;
+    background: rgb(0 71 21);
     margin: 20px;
     position: relative;
     left: 50%;
@@ -1169,7 +1187,7 @@ section .card_container .card_container_info:hover p {
     border-radius: 20px;
 }
 
-.more_information .top_time {
+/* .more_information .top_time {
     position: absolute;
     top: 20px;
     color: #ffffff;
@@ -1186,7 +1204,7 @@ section .card_container .card_container_info:hover p {
 .more_information .top_time ul li {
     list-style: none;
     margin: 10px;
-}
+} */
 
 .more_information .info_message {
     display: flex;
@@ -1204,22 +1222,22 @@ section .card_container .card_container_info:hover p {
 }
 
 .more_information .info_contact .top_en_title {
-    font-size: 1em;
+    font-size: 2em;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
 .more_information .info_contact .top_en_title .dot {
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background: #FF1515;
     margin-left: 10px;
 }
 
 .more_information .info_contact .top_ch_title {
-    font-size: 2em;
+    font-size: 4em;
 }
 
 .more_information .info_contact .medium1,
@@ -1274,7 +1292,7 @@ section .card_container .card_container_info:hover p {
 .more_information .bottom_info {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     position: relative;
     justify-content: space-evenly;
@@ -1374,9 +1392,9 @@ section .card_container .card_container_info:hover p {
 
 @media screen and (min-width:200px) and (max-width:857px) {
     .home {
-        top: -12px;
-        left: -10px;
-        scale: .6;
+        top: 10px;
+        left: -50px;
+        scale: 0.7;
     }
 
     .hambur {
@@ -1384,9 +1402,15 @@ section .card_container .card_container_info:hover p {
         display: block;
         z-index: 999;
     }
+    
+    .logo{
+        background: url(LOGO去背.png);
+    }
 
     .navbar {
         opacity: 0;
+        border-radius: 20px;
+        z-index: -999;
     }
 
     .navbar.active {
@@ -1398,7 +1422,9 @@ section .card_container .card_container_info:hover p {
         background: #138353;
         opacity: 1;
         z-index: 998;
+        border-radius: 0px;
     }
+
 
     .navbar #myList{
         flex-direction: column;
@@ -1455,45 +1481,6 @@ section .card_container .card_container_info:hover p {
         height: 215px;
         font-size: 1em;
     }
-
-    /* .container_see .function_explanation .human_img {
-        width: 110px;
-        height: 276px;
-    }
-
-    .container_see .function_explanation {
-        top: -30px;
-        left: 35%;
-        transform: translate(-15%, -30px);
-    }
-
-    .function_explanation .humaninfo {
-        font-size: 0.6em;
-    }
-
-    .function_explanation .human {
-        max-width: 465px;
-    }
-
-    .function_explanation .humaninfo .human_Age_info,
-    .function_explanation .humaninfo .human_Sugar_info,
-    .function_explanation .humaninfo .human_Se_info,
-    .function_explanation .humaninfo .human_C_info {
-        position: relative;
-        top: 0;
-        left: 0;
-    }
-
-    .function_explanation .humaninfo .human_Age_info .line,
-    .function_explanation .humaninfo .human_Sugar_info .line,
-    .function_explanation .humaninfo .human_Se_info .line,
-    .function_explanation .humaninfo .human_C_info .line {
-        width: 0;
-    }
-
-    section .card_container .card_container_info {
-        min-height: 200px;
-    } */
 
     .container_eat .eat_title {
         font-size: 3em;
@@ -1570,14 +1557,25 @@ section .card_container .card_container_info:hover p {
         height: auto;
     }
 
+    .container_listen .listen_info .listen_info_box{
+        width: 600px;
+        height: auto;
+        justify-content: center;
+    }
+
     .container_environment .img_enviroment_box .img_title {
         top: 10%;
         font-size: 2em;
     }
 
-    .prev-button, .next-button{
+    .container_environment .img_enviroment_box .prev-button,
+    .container_environment .img_enviroment_box .next-button{
         top: 30%;
         transform: translateY(-30%);
+    }
+
+    .container_environment .img_enviroment_box{
+        height: 400px;
     }
 }
 
