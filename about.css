@@ -48,7 +48,7 @@ html {
 
 .home .logo{
     width: 400px;
-    height: 400px;
+    height: auto;
 }
 
 .home .logo img{
@@ -223,8 +223,8 @@ html {
 
 @media screen and (min-width:200px) and (max-width:857px) {
     .home {
-        top: -12px;
-        left: -10px;
+        top: 10px;
+        left: -65px;
         scale: .6;
     }
 
@@ -235,18 +235,27 @@ html {
     }
 
     .navbar {
-        opacity: 0;
-    }
-
-    .navbar.active {
         position: fixed;
-        top: 0px;
-        left: 0px;
+        top: -800px;
+        right: 0px;
         width: 100%;
         height: 100vh;
         background: #138353;
         opacity: 1;
         z-index: 998;
+        border-radius: 0px;
+    }
+
+    .navbar.active {
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        width: 100%;
+        height: 100vh;
+        background: #138353;
+        opacity: 1;
+        z-index: 998;
+        border-radius: 0px;
     }
 
     .navbar #myList{

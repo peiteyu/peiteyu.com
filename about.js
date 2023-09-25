@@ -9,20 +9,16 @@ window.addEventListener('load', function() {
     });
 });
 
-const toTop = document.getElementById('toTop');
-const up = document.getElementById('up');
-
-toTop.addEventListener('click',function () {
-  document.documentElement.scrollTop = 0;
+// 選單
+const hambur = document.getElementById('hambur_active');
+const navbar = document.getElementById('navbar_active');
+hambur.addEventListener('click',function(){
+    if(!hambur.classList.contains('active')){
+        hambur.classList.add('active');
+        navbar.classList.add('active');
+    }
+    else{
+        hambur.classList.remove('active');
+        navbar.classList.remove('active');
+    }
 })
-
-window.addEventListener('scroll', function() {
-  const windowHeight = window.scrollY;
-  if (windowHeight > 400){
-    toTop.style.rotate = "-90deg";
-    up.innerHTML = "toTop";
-  }else{
-    toTop.style.rotate = "90deg";
-    up.innerHTML = "scroll";
-  }
-});

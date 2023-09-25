@@ -7,6 +7,10 @@
     letter-spacing: 1.5px;
 }
 
+body{
+    background: #000000;
+}
+
 .toTop{
     width: 80px;
     height: 100px;
@@ -19,12 +23,18 @@
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
 }
 
+.toTop svg {
+    width: 100px;
+    padding: 20px;
+}
+
 .toTop img{
     width: 100%;
     padding: 20px;
 }
 
 .toTop h2{
+    color: #FFFFFF;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
 }
 
@@ -120,7 +130,7 @@ header{
 .left_title{
     position: absolute;
     top:50%;
-    left:40%;
+    left: 30%;
     transform: translate(-50%,-20%);
     display: flex;
     flex-direction: column;
@@ -138,10 +148,10 @@ header{
 
 @keyframes out{
     0%{
-        left: 15%;
+        left: 20%;
     }
     100%{
-        left: 40%;
+        left: 30%;
     }
 }
 
@@ -154,17 +164,20 @@ header{
 .left_title h6{
     font-size: 2rem;
     font-weight: 500;
-    background: #00a6ff;
+    width: 100%;
+    background: #ff0000;
     color: #ffffff;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    animation: test cubic-bezier(0.075, 0.82, 0.165, 1) 10s;
+    animation: test cubic-bezier(0.075, 0.82, 0.165, 1) 4s;
 }
 
 @keyframes test {
     0%{
+        width: 0%;
         background: transparent;
     }
     100%{
+        width: 100%;
         background: #ff0000;
     }
 }
@@ -243,19 +256,20 @@ section{
 
 .container_see .left_section_title{
     width: 65px;
-    height: 365px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #fff;
-    position: relative;
+    color: #000000;
+    position: absolute;
     top:0px;
     left: 10px;
-    background: #000000;
+    background: #ffffff;
     letter-spacing: 2px;
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 1em;
     z-index: 2;
+    border-radius: 0px 0px 20px 20px;
 }
 
 .container_see .left_section_title #see{
@@ -284,7 +298,7 @@ section{
     height: 0;
     border-style: solid;
     border-width: 13.9px 8px 0 8px;
-    border-color: #ffffff transparent transparent transparent;
+    border-color: #000000 transparent transparent transparent;
     border-radius: 2px;
 }
 
@@ -297,13 +311,13 @@ section{
     max-width: 77.77%;
     height: auto;
     position: relative;
-    top:-225px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    margin-top: 60px;
 }
 
 .container_see .Preface::before{
@@ -334,23 +348,22 @@ section{
     width: 40%;
 }
 
-/* .container_see #container_p{
-    width: 600px;
-    position: absolute;
-    top: 90px;
-    left: 40%;
-    font-weight: 900;
-    font-size: 2em;
-} */
+.container_see #container_p{
+    color: #ffffff;
+}
 
 .container_see .wasabi_brief_intro{
     max-width: 77.77%;
     min-height: 1200px;
     position: relative;
-    top: -180px;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 20px;
+    margin-top: 60px;
+}
+
+.container_see .wasabi_brief_intro .wasabi_text{
+    color: #FFFFFF;
 }
 
 .container_see .wasabi_brief_intro .wasabi_text .grow_img{
@@ -393,15 +406,6 @@ section{
     width: 100%;
 }
 
-
-/* .container_see .wasabi_brief_intro .wasabi_img{
-    max-width: 66.666%;
-    position: absolute;
-    bottom:20px;
-    right: 10px;
-    opacity: 0.5;
-} */
-
 .container_see .wasabi_brief_intro .wasabi_img img{
     max-width: 100%;
     left: 40px;
@@ -427,6 +431,7 @@ section{
     font-weight: 500;
     margin: 20px;
     line-height: 2;
+    letter-spacing: 1.5px;
 }
 
 .container_see .function_explanation{
@@ -448,6 +453,7 @@ section{
     justify-content: center;
     align-items: center;
     margin-right: 50px;
+    color: #FFFFFF;
 }
 
 .container_see .function_explanation .human_img{
@@ -470,31 +476,12 @@ section{
 .container_see .function_explanation .human_img #img4{
     width: 132px;
 }
-
-/* .container_see .function_explanation .human_img #img1:hover{
-    filter: saturate(110%);
-    width:200px;
-}
-
-.container_see .function_explanation .human_img #img2:hover{
-    filter: saturate(110%);
-    width:300px;
-}
-
-.container_see .function_explanation .human_img #img3:hover{
-    filter: saturate(110%);
-    width:300px;
-}
-
-.container_see .function_explanation .human_img #img4:hover{
-    filter: saturate(110%);
-    width:170px;
-} */
    
 .function_explanation .humaninfo{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    color: rgb(255, 255, 255);
 }
 
 .function_explanation .human{
@@ -532,7 +519,7 @@ section{
 }
 
 .function_explanation .human .ageInfo .content .top_text{
-    font-size: 2em;
+    font-size: 3em;
     font-weight: 900;
 }
 
@@ -543,7 +530,7 @@ section{
 }
 
 .function_explanation .human .ageInfo .content .bottom_text{
-    font-size: 0.7em;
+    font-size: 1em;
 }
 
 .function_explanation .human.human_Age_info .line{
@@ -562,7 +549,7 @@ section{
 
 .function_explanation .humaninfo .human_Sugar_info{
     position: relative;
-    top: 115px;
+    top: 70px;
     left: -50px;
 }
 
@@ -575,7 +562,7 @@ section{
 
 .function_explanation .humaninfo .human_Se_info{
     position: relative;
-    top: 200px;
+    top: 105px;
     left: 10px;
 }
 
@@ -588,7 +575,7 @@ section{
 
 .function_explanation .humaninfo .human_C_info{
     position: relative;
-    top: 270px;
+    top: 140px;
     left: -120px;
 }
 
@@ -667,7 +654,7 @@ section .card_container .card_container_info .card_info_subtitle p{
     margin: 20px;
     transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
     opacity: 0;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 2;
 }
 
@@ -690,6 +677,14 @@ section .card_container .card_container_info:hover p{
     position: relative;
     text-align: center;
     margin-top: 100px;
+    color: #FFFFFF;
+}
+
+.listen_share{
+    font-size: 3em;
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
 }
 
 .listen_share p{
@@ -697,6 +692,7 @@ section .card_container .card_container_info:hover p{
     position: relative;
     text-align: center;
     margin: 50px;
+    letter-spacing: 1.5px;
     line-height: 2;
 }
 
@@ -709,13 +705,18 @@ section .card_container .card_container_info:hover p{
 
 .listen_info{
     width: 100%;
-    height: 700px;
+    height: auto;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
+    color: #ffffff;
+}
+
+.listen_info:hover{
+    width: 100%;
 }
 
 .listen_info .listen_info_box{
@@ -737,7 +738,6 @@ section .card_container .card_container_info:hover p{
     height: 300px;
     border-radius: 20px;
     margin: 20px;
-    /* overflow: hidden; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -751,7 +751,7 @@ section .card_container .card_container_info:hover p{
 
 .listen_info .listen_info_box .box1{
     width: 200px;
-    height: 200px;
+    height: auto;
     border-radius: 20px;
     position: relative;
     display: flex;
@@ -763,19 +763,19 @@ section .card_container .card_container_info:hover p{
 }
 
 .listen_info .listen_info_box .box1 p:nth-child(1){
-    margin-bottom: 10px;
+    margin: 20px;
     width: 200px;
     height: auto;
     transition: .5s ease-in-out;
-    font-size: 1em;
-    font-weight: 900;
-    color: #000000;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #ffffff;
 }
 
 .listen_info .listen_info_box .box1 a{
     margin-top: 20px;
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     font-size: 1em;
 }
 
@@ -787,7 +787,7 @@ section .card_container .card_container_info:hover p{
 .more_information{
     width: 90%;
     height: 600px;
-    background: #000000;
+    background: rgb(0 71 21);
     margin: 20px;
     position: relative;
     left: 50%;
@@ -798,25 +798,6 @@ section .card_container .card_container_info:hover p{
     justify-content: center;
     flex-direction: column;
     border-radius: 20px;
-}
-
-.more_information .top_time{
-    position: absolute;
-    top:20px;
-    color: #ffffff;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.more_information .top_time ul{
-    display: flex;
-    flex-direction: row;
-    color: #ffffff;
-}
-
-.more_information .top_time ul li{
-    list-style: none;
-    margin: 10px;
 }
 
 .more_information .info_message{
@@ -933,18 +914,27 @@ section .card_container .card_container_info:hover p{
     }
 
     .navbar {
-        opacity: 0;
-    }
-
-    .navbar.active {
         position: fixed;
-        top: 0px;
-        left: 0px;
+        top: -800px;
+        right: 0px;
         width: 100%;
         height: 100vh;
         background: #138353;
         opacity: 1;
         z-index: 998;
+        border-radius: 0px;
+    }
+
+    .navbar.active {
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        width: 100%;
+        height: 100vh;
+        background: #138353;
+        opacity: 1;
+        z-index: 998;
+        border-radius: 0px;
     }
 
     .navbar #myList{
@@ -980,7 +970,7 @@ section .card_container .card_container_info:hover p{
 
     .container_see .left_section_title {
         top: 0px;
-        height: 500px;
+        height: 300px;
     }
 
     @keyframes slideInLeft {
@@ -991,6 +981,18 @@ section .card_container .card_container_info:hover p{
         100% {
             left: 10px;
         }
+    }
+
+    .container_see .Preface{
+        flex-direction: column;
+    }
+
+    .container_see .Preface img{
+        width: 100%;
+    }
+
+    .container_see .Preface p{
+        width: 100%;
     }
 
     .container_see .function_explanation .human_img {
@@ -1033,8 +1035,6 @@ section .card_container .card_container_info:hover p{
     .listen_share{
         font-size: 2em;
         position: relative;
-        left: 50%;
-        transform: translate(-25%);
     }
 
     .listen_info {
@@ -1079,6 +1079,11 @@ section .card_container .card_container_info:hover p{
 }
 
 @media screen and (min-width:360px) and (max-width:430px){
+    .bg{
+        background-size: cover;
+        background-position: -255px;
+    }
+
     .more_information{
         left: 0%;
         transform: translateX(0%);
@@ -1086,5 +1091,14 @@ section .card_container .card_container_info:hover p{
 
     .Copyright span{
         text-align: center;
+    }
+
+    .function_explanation .humaninfo{
+        align-content: center;
+    }
+
+    .listen_info .listen_info_box{
+        height: 570px;
+        justify-content: center
     }
 }

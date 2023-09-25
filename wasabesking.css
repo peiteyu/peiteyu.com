@@ -23,12 +23,18 @@ body{
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
 }
 
+.toTop svg {
+    width: 100px;
+    padding: 20px;
+}
+
 .toTop img{
     width: 100%;
     padding: 20px;
 }
 
 .toTop h2{
+    color: #FFFFFF;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
 }
 
@@ -397,15 +403,6 @@ section{
     width: 100%;
 }
 
-
-/* .container_see .wasabi_brief_intro .wasabi_img{
-    max-width: 66.666%;
-    position: absolute;
-    bottom:20px;
-    right: 10px;
-    opacity: 0.5;
-} */
-
 .container_see .wasabi_brief_intro .wasabi_img img{
     max-width: 100%;
     left: 40px;
@@ -451,6 +448,7 @@ section{
     justify-content: center;
     align-items: center;
     margin-right: 50px;
+    color: #FFFFFF;
 }
 
 .container_see .function_explanation .human_img{
@@ -473,26 +471,6 @@ section{
 .container_see .function_explanation .human_img #img4{
     width: 132px;
 }
-
-/* .container_see .function_explanation .human_img #img1:hover{
-    filter: saturate(110%);
-    width:200px;
-}
-
-.container_see .function_explanation .human_img #img2:hover{
-    filter: saturate(110%);
-    width:300px;
-}
-
-.container_see .function_explanation .human_img #img3:hover{
-    filter: saturate(110%);
-    width:300px;
-}
-
-.container_see .function_explanation .human_img #img4:hover{
-    filter: saturate(110%);
-    width:170px;
-} */
    
 .function_explanation .humaninfo{
     display: flex;
@@ -948,19 +926,27 @@ section .card_container .card_container_info:hover p{
     }
 
     .navbar {
-        opacity: 0;
-        z-index: -999;
-    }
-
-    .navbar.active {
         position: fixed;
-        top: 0px;
-        left: 0px;
+        top: -800px;
+        right: 0px;
         width: 100%;
         height: 100vh;
         background: #138353;
         opacity: 1;
         z-index: 998;
+        border-radius: 0px;
+    }
+
+    .navbar.active {
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        width: 100%;
+        height: 100vh;
+        background: #138353;
+        opacity: 1;
+        z-index: 998;
+        border-radius: 0px;
     }
 
     .navbar #myList{
@@ -996,7 +982,7 @@ section .card_container .card_container_info:hover p{
 
     .container_see .left_section_title {
         top: 0px;
-        height: 500px;
+        height: 300px;
     }
 
     @keyframes slideInLeft {
@@ -1007,6 +993,18 @@ section .card_container .card_container_info:hover p{
         100% {
             left: 10px;
         }
+    }
+
+    .container_see .Preface{
+        flex-direction: column;
+    }
+
+    .container_see .Preface img{
+        width: 100%;
+    }
+
+    .container_see .Preface p{
+        width: 100%;
     }
 
     .container_see .function_explanation .human_img {
@@ -1049,8 +1047,6 @@ section .card_container .card_container_info:hover p{
     .listen_share{
         font-size: 2em;
         position: relative;
-        left: 50%;
-        transform: translate(-25%);
     }
 
     .listen_info {
@@ -1095,6 +1091,11 @@ section .card_container .card_container_info:hover p{
 }
 
 @media screen and (min-width:360px) and (max-width:430px){
+    .bg{
+        background-size: cover;
+        background-position: -255px;
+    }
+
     .more_information{
         left: 0%;
         transform: translateX(0%);
@@ -1102,5 +1103,14 @@ section .card_container .card_container_info:hover p{
 
     .Copyright span{
         text-align: center;
+    }
+
+    .function_explanation .humaninfo{
+        align-content: center;
+    }
+
+    .listen_info .listen_info_box{
+        height: 570px;
+        justify-content: center
     }
 }
