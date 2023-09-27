@@ -214,7 +214,7 @@ header {
 }
 
 .navbar .more:hover {
-    height: 210px;
+    height: 240px;
     overflow: hidden;
 }
 
@@ -1404,7 +1404,7 @@ section .card_container .card_container_info:hover p {
     }
     
     .logo img{
-        opacity: 0;
+        display: none;
     }
 
     .navbar {
