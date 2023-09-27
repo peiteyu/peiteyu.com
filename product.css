@@ -281,7 +281,7 @@ button:focus {
     }
     
     .logo img{
-        opacity: 0;
+        display: none;
     }
 
     .navbar {
@@ -306,6 +306,10 @@ button:focus {
         opacity: 1;
         z-index: 998;
         border-radius: 0px;
+    }
+
+    .navbar.active .more:hover {
+        height: 240px;
     }
 
     .navbar #myList{
