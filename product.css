@@ -17,6 +17,7 @@ body{
     bottom: 0px;
     right: 0;
     rotate: 45deg;
+    z-index: -2;
 }
 
 .navgation{
@@ -309,5 +310,35 @@ button:focus {
 
     .navbar #myList{
         flex-direction: column;
+    }
+}
+
+@media screen and (min-width:360px) and (max-width:430px){
+    .productContainer .rightProductText{
+        margin-left: 0px;
+    }
+
+    .productContainer .rightProductText h1{
+        height: 60px;
+        font-size: 1.5em;
+    }
+
+    .productContainer .rightProductText span{
+        height: 70px;
+        font-size: 1.3em;
+    }
+
+    .productContainer .rightProductText .goodList{
+        height: 200px;
+    }
+
+    .productContainer .rightProductText .goodList p{
+        margin-top:20px;
+        font-size: 1em;
+    }
+
+    .productContainer .rightProductText p{
+        margin-top:20px;
+        font-size:1.2em;
     }
 }
