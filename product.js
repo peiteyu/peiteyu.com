@@ -1,4 +1,4 @@
-const images = ["葵地淇DMpage (1).png", "葵地淇DMpage (2).png", "葵地淇DMpage (3).png","葵地淇DMpage (4).png"]; // 图片文件名数组
+const images = ["葵地淇DMpage (1).png", "葵地淇DMpage (2).png", "葵地淇DMpage (3).png","葵地淇DMpage (4).png","葵地淇DMpage (5).png"]; // 图片文件名数组
 let currentIndex = 0; // 当前显示的图片索引
 const productImage = document.getElementById("productImage");
 const dotsContainer = document.getElementById("dotsContainer");
