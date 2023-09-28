@@ -915,7 +915,7 @@ section .card_container .card_container_info:hover p{
 
     .navbar {
         position: fixed;
-        top: -800px;
+        top: -1000px;
         right: 0px;
         width: 100%;
         height: 100vh;
@@ -1001,7 +1001,7 @@ section .card_container .card_container_info:hover p{
     }
 
     .container_see .function_explanation {
-        top: -300px;
+        top: 0px;
     }
 
     .function_explanation .humaninfo {
@@ -1012,6 +1012,14 @@ section .card_container .card_container_info:hover p{
         max-width: 465px;
     }
 
+    .function_explanation .human .ageInfo .cricle_img{
+        margin: 0px;
+    }
+
+    .function_explanation .human .ageInfo .content{
+        margin-left: 20px;
+    }
+
     .function_explanation .humaninfo .human_Age_info,
     .function_explanation .humaninfo .human_Sugar_info,
     .function_explanation .humaninfo .human_Se_info,
@@ -1019,6 +1027,7 @@ section .card_container .card_container_info:hover p{
         position: relative;
         top: 0;
         left: 0;
+        margin: 0px;
     }
 
     .function_explanation .humaninfo .human_Age_info .line,
@@ -1098,7 +1107,11 @@ section .card_container .card_container_info:hover p{
     }
 
     .listen_info .listen_info_box{
-        height: 570px;
+        height: 670px;
         justify-content: center
+    }
+
+    section .card_container .card_container_info .card_info_subtitle p{
+        font-size: 0.5em;
     }
 }

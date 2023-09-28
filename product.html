@@ -37,10 +37,10 @@
                         <a href="document.html">
                             <li class="menu-item">文獻</li>
                         </a>
-                        <a href="product.html">
-                            <li class="menu-item">產品DM</li>
-                        </a>
                     </ul>
+                    <a href="product.html">
+                        <li class="menu-item">產品DM</li>
+                    </a>
                     <a href="wasabesking.html">
                         <li class="menu-item">關於葵地淇</li>
                     </a>
@@ -54,12 +54,14 @@
         </div>
     </header>
     <div class="productContainer">
-        <!-- <div class="dots-container" id="dotsContainer"></div> -->
-        <button id="prevButton">Pre</button>
-        <div class="leftProductImg">
+        <!-- <div class="dots-container" id="dotsContainer"></div> -->   
+        <div class="leftProductImg" onclick="big()" id="leftProductImg">
             <img id="productImage" src="" alt="產品圖片">
         </div>
-        <button id="nextButton">Next</button>
+        <div class="control">
+            <button id="prevButton">Pre</button>
+            <button id="nextButton">Next</button>
+        </div>
         <div class="rightProductText">
             <h1>產品概述:葵地淇5、9號</h1>
             <span>你知道山葵擁有跟一般植物所擁有的營養還要多嗎?</span>
