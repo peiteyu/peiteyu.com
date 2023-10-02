@@ -103,3 +103,20 @@ hambur.addEventListener('click',function(){
         navbar.classList.remove('active');
     }
 })
+
+const fullscreenButton = document.getElementById("imgContainer");
+const fullscreenImage = document.getElementById("productImage");
+
+fullscreenButton.addEventListener("click", () => {
+  if (!document.fullscreenElement) {
+    fullscreenImage.requestFullscreen()
+      .catch(err => {
+        console.error("不支援", err);
+      });
+  } else {
+    document.exitFullscreen();
+  }
+});
+
+
+
