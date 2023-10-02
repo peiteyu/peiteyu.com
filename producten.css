@@ -170,8 +170,6 @@ button:focus {
     transition: transform 0.3s ease-in-out;
 }
 
-  
-
 #dotsContainer {
     width: auto;
     height: auto;
@@ -194,14 +192,11 @@ button:focus {
 
 .productContainer .rightProductText{
     max-width: 1000px;
-    height: 600px;
+    height: auto;
     position: relative;
     display: flex;
     flex-direction: column;
-    /* margin-left: 100px; */
     padding: 10px;
-    border-radius: 20px;
-    
 }
 
 .productContainer .rightProductText h1{
@@ -214,6 +209,10 @@ button:focus {
     position: relative;
     margin-top: 50px;
     overflow: hidden;
+}
+
+.productContainer .rightProductText .goodList .list{
+    position: relative;
 }
 
 .productContainer .rightProductText span{
@@ -230,38 +229,17 @@ button:focus {
     overflow: hidden;
 }
 
-.productContainer .rightProductText .goodList p:nth-child(1)::before{
+.productContainer .rightProductText .goodList .list::before{
     content: "";
     width: 10px;
     height: 10px;
     position: absolute;
-    top: 30px;
+    top: 25px;
     left: 5px;
     background: #1D8257;
     border-radius: 20px;
 }
 
-.productContainer .rightProductText .goodList p:nth-child(2)::before{
-    content: "";
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    top: 85px;
-    left: 5px;
-    background: #1D8257;
-    border-radius: 20px;
-}
-
-.productContainer .rightProductText .goodList p:nth-child(3)::before{
-    content: "";
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    top: 152px;
-    left: 5px;
-    background: #1D8257;
-    border-radius: 20px;
-}
 
 .productContainer .rightProductText p{
     margin-top: 100px;
@@ -341,7 +319,7 @@ button:focus {
     }
 
     .productContainer .rightProductText .goodList{
-        height: 200px;
+        height: auto;
     }
 
     .productContainer .rightProductText .goodList p{
@@ -393,7 +371,7 @@ button:focus {
     }
 
     .productContainer .rightProductText .goodList{
-        height: 200px;
+        height: auto;
     }
 
     .productContainer .rightProductText .goodList p{
