@@ -193,7 +193,7 @@ button:focus {
 }
 
 .productContainer .rightProductText{
-    max-width: 1000px;
+    max-width: 900px;
     height: 600px;
     position: relative;
     display: flex;

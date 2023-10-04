@@ -473,6 +473,7 @@ section{
 }
    
 .function_explanation .humaninfo{
+    min-height: 560px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -1013,11 +1014,12 @@ section .card_container .card_container_info:hover p{
     }
 
     .container_see .function_explanation {
-        top: -300px;
+        top: -300px; 
     }
 
     .function_explanation .humaninfo {
         font-size: 0.6em;
+        min-height: 0;
     }
 
     .function_explanation .human {

@@ -104,24 +104,50 @@ nextbutton.addEventListener('click', () => {
 
 showImage(currentIndex);
 
-
 //JS動畫
-
-const eatPosition = document.getElementById('eat'); // 通过ID或选择器选择元素
+// 透過ID選擇器選擇元素
+const servicePosition = document.getElementById('service');
+const eatPosition = document.getElementById('eat'); 
 const agentTitle = document.getElementById('agentTitle');
+const title_onePosition = document.getElementById('title_one');
 const holmes = document.getElementById('holmes');
 const ma = document.getElementById('ma');
 
+
 window.addEventListener('scroll', function () {
   const windowHeight = window.scrollY;
+  holmes.style.top = windowHeight + "px";
   if (windowHeight >= 250) {
-    eatPosition.style.top = "0px"; // 移动元素到頂部
+    servicePosition.style.top = "0px"; // 移动元素到頂部
     agentTitle.style.transform = "translateX(-50%) rotate(0deg) scale(1)";
   } else {
-    eatPosition.style.top = "-240px"; // 这里可以根据你的需求设置一个隐藏位置
+    servicePosition.style.top = "-240px";
     agentTitle.style.transform = "translateX(950px) rotate(45deg) scale(1.2)";
   }
-
-  holmes.style.top = windowHeight + "px";
-  
+  if(windowHeight >= 2000){
+    eatPosition.style.top =  "0px";
+  }
+  else{
+    eatPosition.style.top =  "-300px";
+  }
+  if(windowHeight >= 1800 && windowHeight <=2560){
+    title_onePosition.style.opacity = "1";
+    title_onePosition.style.zIndex = "2";
+    title_onePosition.style.position = "fixed";
+  }
+  else{
+    title_onePosition.style.position = "absolute";
+    title_onePosition.style.opacity = "0";
+  }
+  console.log(windowHeight);
 });
+
+function adjustLayout() {
+
+}
+
+window.addEventListener('resize', adjustLayout);
+
+adjustLayout();
+
+

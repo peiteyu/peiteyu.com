@@ -864,7 +864,7 @@ section .card_container .card_container_info:hover p {
 
 .container_listen .listen_info .listen_info_box .box1 {
     width: 200px;
-    height: 200px;
+    height: auto;
     border-radius: 20px;
     position: relative;
     display: flex;

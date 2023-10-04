@@ -213,7 +213,7 @@ header {
 }
 
 .navbar .more:hover {
-    height: 240px;
+    height: 196px;
     overflow: hidden;
     background: #c4ffe5;
     border-radius: 20px;
@@ -319,331 +319,11 @@ section {
     color: #ffffff;
 }
 
-
-/* 關於葵地淇 */
-
-.container_see {
-    width: 100%;
-    height: auto;
-    position: relative;
-}
-
-.container_see .left_section_title {
-    width: 65px;
-    height: 365px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #fff;
-    position: relative;
-    top: 100px;
-    left: -500px;
-    background: #000000;
-    letter-spacing: 2px;
-    font-weight: 500;
-    font-size: 1.5em;
-    z-index: 2;
-}
-
-.container_see .left_section_title #see {
-    animation: slideInLeft 1s ease-out forwards;
-}
-
-@keyframes slideInLeft {
-    0% {
-        left: -500px;
-    }
-
-    100% {
-        left: 100px;
-    }
-}
-
-.container_see .left_section_title .top_word {
-    margin-top: 60px;
-}
-
-.container_see .left_section_title .top_word::before {
-    content: '';
-    position: absolute;
-    top: 20px;
-    left: 25px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 13.9px 8px 0 8px;
-    border-color: #000000 transparent transparent transparent;
-    border-radius: 2px;
-}
-
-.container_see .left_section_title .top_word,
-.container_see .left_section_title .bottom_word {
-    writing-mode: vertical-lr;
-}
-
-.container_see p {
-    width: 600px;
-    position: absolute;
-    top: 90px;
-    left: 60%;
-    transform: translateX(-50%);
-    font-weight: 500;
-    font-size: 1.2em
-}
-
-.container_see #container_p {
-    font-size: 2em;
-    font-weight: 900;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .2s;
-    transition-delay: .2s;
-    opacity: 1;
-}
-
-.container_see .function_explanation {
-    width: auto;
-    height: auto;
-    position: relative;
-    top: -100px;
-    left: 50%;
-    transform: translateX(-25%);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.container_see .function_explanation .human_img {
-    width: 250px;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center
-}
-
-
-
-.container_see .function_explanation .human_img img {
-    width: 250px;
-    transition: 0.5s ease;
-}
-
-.container_see .function_explanation .human_img #img1 {
-    width: 177px;
-}
-
-.container_see .function_explanation .human_img #img4 {
-    width: 132px;
-}
-
-/* .container_see .function_explanation .human_img #img1:hover{
-    filter: saturate(110%);
-    width:200px;
-}
-
-.container_see .function_explanation .human_img #img2:hover{
-    filter: saturate(110%);
-    width:300px;
-}
-
-.container_see .function_explanation .human_img #img3:hover{
-    filter: saturate(110%);
-    width:300px;
-}
-
-.container_see .function_explanation .human_img #img4:hover{
-    filter: saturate(110%);
-    width:170px;
-} */
-
-.function_explanation .humaninfo {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.function_explanation .human {
-    max-width: 1200px;
-    margin-left: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-}
-
-.function_explanation .human .ageInfo {
-    width: 400px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.function_explanation .human .ageInfo .cricle_img {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #1D8257;
-    border-radius: 50%;
-    margin: 0px 20px 0px 20px;
-}
-
-.function_explanation .human .ageInfo .content {
-    max-width: 400px;
-    display: flex;
-    flex-direction: column;
-}
-
-.function_explanation .human .ageInfo .content .top_text {
-    font-size: 3em;
-    font-weight: 900;
-}
-
-.function_explanation .human .ageInfo .content .cut_line {
-    width: 100px;
-    height: 2px;
-    background: #000000;
-}
-
-.function_explanation .human .ageInfo .content .bottom_text {
-    font-size: 1em;
-}
-
-.function_explanation .human.human_Age_info .line {
-    width: 300px;
-    height: 5px;
-    border-radius: 2px;
-    background: #FF4545;
-}
-
-.function_explanation .humaninfo .human_Age_info {
-    position: relative;
-    top: 35px;
-    left: -50px;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
-}
-
-.function_explanation .humaninfo .human_Sugar_info {
-    position: relative;
-    top: 70px;
-    left: -50px;
-}
-
-.function_explanation .human.human_Sugar_info .line {
-    width: 115px;
-    height: 5px;
-    border-radius: 2px;
-    background: #FC7F7F;
-}
-
-.function_explanation .humaninfo .human_Se_info {
-    position: relative;
-    top: 105px;
-    left: 10px;
-}
-
-.function_explanation .human.human_Se_info .line {
-    width: 240px;
-    height: 5px;
-    border-radius: 2px;
-    background: #B22B2B;
-}
-
-.function_explanation .humaninfo .human_C_info {
-    position: relative;
-    top: 140px;
-    left: -120px;
-}
-
-.function_explanation .human.human_C_info .line {
-    width: 300px;
-    height: 5px;
-    border-radius: 2px;
-    background: #4B0808;
-}
-
-section .card_container {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-section .card_container .card_container_info {
-    width: 500px;
-    min-height: 800px;
-    border-radius: 20px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
-}
-
-section .card_container .card_container_info.Img1 {
-    background: url(食_植物.jpg);
-}
-
-section .card_container .card_container_info.Img2 {
-    background: url(用_異.jpg);
-}
-
-section .card_container .card_container_info.Img3 {
-    background: url(健_微笑.jpg);
-    background-repeat: no-repeat;
-    background-position: 0px;
-}
-
-section .card_container .card_container_info .card_info_title {
-    width: 120px;
-    height: 120px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-section .card_container .card_container_info .card_info_title img:nth-child(2) {
-    position: absolute;
-    top: 24px;
-    left: 5px;
-}
-
-section .card_container .card_container_info .card_info_subtitle {
-    width: auto;
-    height: auto;
-}
-
-section .card_container .card_container_info .card_info_subtitle p {
-    width: 200px;
-    height: auto;
-    color: #ffffff;
-    text-align: center;
-    filter: blur(0px);
-    transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-    opacity: 0;
-}
-
-section .card_container .card_container_info:hover p {
-    opacity: 1;
-    z-index: 999;
-    color: #000000;
-    background: #1D8257;
-    padding: 20px;
-    border-radius: 10px;
-}
-
 /* 該吃什麼 */
 .container_eat {
     width: 100%;
     height: 800px;
-    background: rgb(55 170 184);;
+    background: rgb(1, 137, 155);;
     position: relative;
     border-radius: 20px;
     margin: 100px 0px 100px 0px;
@@ -664,6 +344,7 @@ section .card_container .card_container_info:hover p {
     font-weight: 500;
     font-size: 1.5em;
     z-index: 2;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
 }
 
 .container_eat .left_section_title .top_word {
@@ -688,21 +369,22 @@ section .card_container .card_container_info:hover p {
     writing-mode: vertical-lr;
 }
 
-.container_eat .eat_title {
+.eat_title {
     font-size: 6em;
-    position: absolute;
+    position: fixed;
     top: 30%;
     left: 50%;
     transform: translate(-30%, -50%);
-    z-index: 2;
+    z-index: -999;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
 }
 
-.container_eat .eat_title span:nth-child(1) {
-    color: #000000;
+.eat_title span:nth-child(1) {
+    color: #ffffff;
 }
-
-.container_eat .eat_title span:nth-child(2) {
+.eat_title span:nth-child(2) {
     color: #ffffff;
 }
 
