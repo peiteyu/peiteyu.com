@@ -6,6 +6,10 @@
     overflow-x: hidden;
 }
 
+body{
+    /* background: #ffcece; */
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -27,28 +31,26 @@ html {
     box-shadow: transparent;
 }
 
-body{
-    background:url(pruebg.jpg);
-}
-
 .toTop {
-    width: 80px;
-    height: 100px;
+    display: flex;
+    flex-direction: column;
     position: fixed;
     bottom: 0px;
     right: 20px;
-    rotate: 90deg;
     z-index: 99;
     overflow: hidden;
+    align-items: center;
+}
+
+.toTop svg {
+    width: 100px;
+    padding: 20px;
+    rotate: 90deg;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
 }
 
-.toTop img {
-    width: 100%;
-    padding: 20px;
-}
-
 .toTop h2 {
+    color: #ffffff;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
 }
 

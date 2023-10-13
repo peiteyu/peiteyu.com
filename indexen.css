@@ -8,7 +8,7 @@
 
 body{
     /* background: linear-gradient( #000000,#09623b); */
-    background: #000000;
+    background: #232D3F;
 }
 
 html {
@@ -33,20 +33,21 @@ html {
 }
 
 .toTop {
-    width: 80px;
-    height: 100px;
+    display: flex;
+    flex-direction: column;
     position: fixed;
     bottom: 0px;
     right: 20px;
-    rotate: 90deg;
     z-index: 99;
     overflow: hidden;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+    align-items: center;
 }
 
 .toTop svg {
     width: 100px;
     padding: 20px;
+    rotate: 90deg;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
 }
 
 .toTop h2 {
@@ -162,7 +163,7 @@ header {
 .left_title h6 {
     font-size: 1.5em;
     font-weight: 500;
-    background: #00a6ff;
+    background: #008170;
     color: #ffffff;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -643,7 +644,7 @@ section .card_container .card_container_info:hover p {
 .container_eat {
     width: 100%;
     height: 800px;
-    background: rgb(55 170 184);;
+    background: #008170;;
     position: relative;
     border-radius: 20px;
     margin: 100px 0px 100px 0px;
@@ -699,7 +700,7 @@ section .card_container .card_container_info:hover p {
 }
 
 .container_eat .eat_title span:nth-child(1) {
-    color: #000000;
+    color: #ff0000;
 }
 
 .container_eat .eat_title span:nth-child(2) {
@@ -728,7 +729,7 @@ section .card_container .card_container_info:hover p {
 .container_eat .eat_button {
     width: 200px;
     height: 50px;
-    background: #1D8257;
+    background: #0F0F0F;
     border-radius: 40px;
     display: flex;
     align-items: center;
@@ -743,7 +744,7 @@ section .card_container .card_container_info:hover p {
 .container_eat .eat_button a {
     font-size: 1.5em;
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     font-weight: 900;
 }
 
@@ -767,7 +768,7 @@ section .card_container .card_container_info:hover p {
     position: absolute;
     top: 100px;
     right: 50px;
-    background: #1D8257;
+    background: #0F0F0F;
 }
 
 /* 真實回饋 */
@@ -906,7 +907,7 @@ section .card_container .card_container_info:hover p {
     position: relative;
     border-radius: 20px;
     margin: 100px 0px 100px 0px;
-    background:rgb(55, 170, 184);
+    background:#008170;
 }
 
 .container_find .left_section_title {
@@ -964,6 +965,7 @@ section .card_container .card_container_info:hover p {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    color: #ffffff;
 }
 
 .container_find .find_info .find_top_button .find_button {
@@ -971,7 +973,7 @@ section .card_container .card_container_info:hover p {
     height: auto;
     border-radius: 20px;
     margin: 20px;
-    background: #138353;
+    background: #0F0F0F;
     font-size: 2em;
     display: flex;
     align-items: center;
@@ -1097,7 +1099,6 @@ section .card_container .card_container_info:hover p {
     width: 100%;
     height: auto;
     position: relative;
-    border-radius: 100px;
     margin-bottom: 100px;
 }
 
@@ -1175,7 +1176,7 @@ section .card_container .card_container_info:hover p {
 .more_information {
     width: 90%;
     height: 600px;
-    background: rgb(0 71 21);
+    background: #008170;
     margin: 20px;
     position: relative;
     left: 50%;
@@ -1305,6 +1306,7 @@ section .card_container .card_container_info:hover p {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #ffffff;
 }
 
 
@@ -1391,7 +1393,7 @@ section .card_container .card_container_info:hover p {
 }
 
 
-@media screen and (min-width:200px) and (max-width:857px) {
+@media screen and (min-width:200px) and (max-width:1024px) {
     .home {
         top: 10px;
         left: -50px;
@@ -1498,10 +1500,10 @@ section .card_container .card_container_info:hover p {
     }
 
     .container_eat .eat_button {
-        position: relative;
+        position: absolute;
         left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        bottom: 30px;
+        transform: translateX(-50%);
     }
 
     .container_eat .eat_img {

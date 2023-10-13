@@ -20,10 +20,10 @@ window.addEventListener('scroll', function() {
   const windowHeight = window.scrollY;
   if (windowHeight > 400){
     toTop.style.rotate = "-90deg";
-    up.innerHTML = "toTop";
+    up.innerHTML = "Top";
   }else{
     toTop.style.rotate = "90deg";
-    up.innerHTML = "scroll";
+    up.innerHTML = "Scroll";
   }
 });
 

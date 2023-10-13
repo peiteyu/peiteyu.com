@@ -1,21 +1,59 @@
-const images = ["葵地淇DMpage (1).png", "葵地淇DMpage (2).png", "葵地淇DMpage (3).png","葵地淇DMpage (4).png","葵地淇DMpage (5).png"]; // 图片文件名数组
-let currentIndex = 0; // 當前顯示的圖片索引
+// 圖片文件名數組
+const images = [
+  {
+    URL:"葵地淇DMpage (1).png",
+    Text:""
+  }, 
+  {
+    URL:"葵地淇DMpage (2).png", 
+    Text:""
+  }, 
+  {
+    URL:"葵地淇DMpage (3).png", 
+    Text:"古人生活是怎麼做到調養身心呢?透過飲食攝取營養，講究食物的質量和多樣性，並將飲食與季節、地域以及個人體質互相結合，以確保身體和心靈的和諧健康。發炎為萬病根源!!有90%以上都是發炎所引起的病痛，並讓我們自身免疫力下降。為此我們透過自然食物來提升自身免疫力!!"
+  }, 
+  {
+    URL:"葵地淇DMpage (4).png", 
+    Text:"古人生活是怎麼做到調養身心呢?透過飲食攝取營養，講究食物的質量和多樣性，並將飲食與季節、地域以及個人體質互相結合，以確保身體和心靈的和諧健康。發炎為萬病根源!!有90%以上都是發炎所引起的病痛，並讓我們自身免疫力下降。為此我們透過自然食物來提升自身免疫力!!"
+  }, 
+  {
+    URL:"葵地淇DMpage (5).png", 
+    Text:"含植化素異硫氰酸鹽、8大微量元素(鋅、錳、硒、硫、鎂、鈣、硼、鍺以及維他命A、C等。比一般植物含有更豐富的營養，我們也秉持為了讓您吃得安心，同時能百分百攝取，堅持不添加任何合成物，保持純天然、無負擔，讓您食之有味。"
+  }, 
+]; 
+
 const productImage = document.getElementById("productImage");
 const dotsContainer = document.getElementById("dotsContainer");
-const prevButton = document.getElementById("prevButton");
-const nextButton = document.getElementById("nextButton");
+const rightTopImgtext = document.getElementById("rightTopImgtext");
+const textContainer1 = document.querySelector('.imgContent');
+let currentIndex = 0; // 當前顯示的圖片索引
+const prevButton = document.getElementById("leftButton");
+const nextButton = document.getElementById("rightButton");
+
+// window.onload = function () {
+//   setInterval(function () {
+//     currentIndex++;
+//     if (currentIndex >= images.length) {
+//       currentIndex = 0;
+//     }
+//     updateImage();
+//     updateDots();
+//   }, 5300);
+// }
+
 
 function updateImage() {
-    const imageUrl = images[currentIndex];
+    const imageUrl = images[currentIndex].URL;
+    textContainer1.textContent = images[currentIndex].Text;
     productImage.style.transform = "scale(0)"; // 先縮小
     setTimeout(function () {
       productImage.src = imageUrl; // 更新圖片
       productImage.style.transform = "scale(1)"; // 再放大
-    }, 300); // 延遲300毫秒以便让缩小动画完成
+    }, 300); // 延遲300毫秒以便讓缩小動畫完成
 }
 
 function updateDots() {
-  // 清空現有的指示点
+  // 清空現有的指示點
   dotsContainer.innerHTML = "";
   // 重新生成dot元素
   for (let i = 0; i < images.length; i++) {
@@ -31,25 +69,34 @@ function updateDots() {
       currentIndex = i;
       updateImage();
       updateDots(); // 更新指示點狀態
+      changeImgcontent();
     });
     // 再添加至dotsContainer
     dotsContainer.appendChild(dot);
   }
 }
 
-// prevButton.addEventListener("click", function () {
-//   if (currentIndex > 0) {
-//     currentIndex--;
-//     updateImage();
-//   }
-// });
+prevButton.addEventListener("click", function () {
+  if (currentIndex > 0) {
+    currentIndex--;
+  } else {
+    currentIndex = images.length - 1; // 如果目前是第一張，跳到最後一張
+  }
+  updateImage();
+  updateDots();
+  changeImgcontent();
+});
 
-// nextButton.addEventListener("click", function () {
-//   if (currentIndex < images.length - 1) {
-//     currentIndex++;
-//     updateImage();
-//   }
-// });
+nextButton.addEventListener("click", function () {
+  if (currentIndex < images.length - 1) {
+    currentIndex++;
+  } else {
+    currentIndex = 0; // 如果目前是最後一張，跳到第一張
+  }
+  updateImage();
+  updateDots();
+  changeImgcontent();
+});
 
 
 // 初始化顯示第一張圖片
@@ -104,6 +151,7 @@ hambur.addEventListener('click',function(){
     }
 })
 
+//圖片全螢幕
 const fullscreenButton = document.getElementById("imgContainer");
 const fullscreenImage = document.getElementById("productImage");
 

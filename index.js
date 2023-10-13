@@ -20,10 +20,10 @@ window.addEventListener('scroll', function() {
     const windowHeight = window.scrollY;
     if (windowHeight > 400){
       toTop.style.rotate = "-90deg";
-      up.innerHTML = "toTop";
+      up.innerHTML = "Top";
     }else{
       toTop.style.rotate = "90deg";
-      up.innerHTML = "scroll";
+      up.innerHTML = "Scroll";
     }
 });
 
@@ -85,7 +85,6 @@ function showImage(index) {
   });
   const currentText1 = images[index].getAttribute('data-h1');
   const textContainer1 = document.querySelector('.img_title');
-  const textContainer2 = document.querySelector('.img_subtitle');
   textContainer1.textContent = currentText1;
 }
 

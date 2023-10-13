@@ -8,33 +8,29 @@
 }
 
 body{
-    background: #000000;
+    background: #113946;
 }
 
-.toTop{
-    width: 80px;
-    height: 100px;
+.toTop {
+    display: flex;
+    flex-direction: column;
     position: fixed;
-    bottom:0px;
+    bottom: 0px;
     right: 20px;
-    rotate: 90deg;
     z-index: 99;
     overflow: hidden;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+    align-items: center;
 }
 
 .toTop svg {
     width: 100px;
     padding: 20px;
+    rotate: 90deg;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
 }
 
-.toTop img{
-    width: 100%;
-    padding: 20px;
-}
-
-.toTop h2{
-    color: #FFFFFF;
+.toTop h2 {
+    color: #ffffff;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
 }
 
@@ -164,10 +160,10 @@ header{
 .left_title h6{
     font-size: 2rem;
     font-weight: 500;
-    background: #00a6ff;
+    background: #113946;
     color: #ffffff;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    animation: test cubic-bezier(0.075, 0.82, 0.165, 1) 10s;
+    animation: test cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
 }
 
 @keyframes test {
@@ -175,7 +171,7 @@ header{
         background: transparent;
     }
     100%{
-        background: #ff0000;
+        background: #113946;
     }
 }
 
@@ -327,14 +323,14 @@ section{
     border-radius: 10px;
     border-style: solid;
     border-width: 0px 0px 100px 100px;
-    border-color: transparent transparent #1ebf77 transparent;
+    border-color: transparent transparent #0F0F0F transparent;
     z-index: 1;
 }
 
 .container_see .Preface p{
     width: 60%;
     margin-top: 60px;
-    font-size: 1em;
+    font-size: 1.5em;
     line-height: 2;
     letter-spacing: 1.5px;
     z-index: 2;
@@ -424,7 +420,7 @@ section{
 }
 
 .container_see .wasabi_brief_intro .wasabi_text p{
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: 500;
     margin: 20px;
 }
@@ -503,7 +499,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #1D8257;
+    background: #BCA37F;
     border-radius: 50%;
     margin: 0px 20px 0px 20px;
 }
@@ -518,12 +514,12 @@ section{
     font-size: 3em;
     font-weight: 900;
 }
-
+/* 
 .function_explanation .human .ageInfo .content .cut_line{
     width: 100px;
     height: 2px;
     background: #000000;
-}
+} */
 
 .function_explanation .human .ageInfo .content .bottom_text{
     font-size: 1em;
@@ -533,7 +529,7 @@ section{
     width:300px;
     height: 5px;
     border-radius: 2px;
-    background: #FF4545;
+    background: #FDF0F0;
 }
 
 .function_explanation .humaninfo .human_Age_info{
@@ -553,7 +549,7 @@ section{
     width: 115px;
     height: 5px;
     border-radius: 2px;
-    background: #FC7F7F;
+    background: #F1B4BB;
 }
 
 .function_explanation .humaninfo .human_Se_info{
@@ -566,7 +562,7 @@ section{
     width: 240px;
     height: 5px;
     border-radius: 2px;
-    background: #B22B2B;
+    background: #1F4172;
 }
 
 .function_explanation .humaninfo .human_C_info{
@@ -579,7 +575,7 @@ section{
     width:300px;
     height: 5px;
     border-radius: 2px;
-    background: #4B0808;
+    background: #132043;
 }
 
 section .card_container{
@@ -655,15 +651,16 @@ section .card_container .card_container_info .card_info_subtitle p{
 }
 
 section .card_container .card_container_info .card_info_subtitle p span{
-    color: #1D8257;
+    color: #BCA37F;
     font-weight: 900;
 }
 
 section .card_container .card_container_info:hover p{
     opacity: 1;
     z-index: 999;
-    color: #000000;
-    background: #a1f4d0;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.63);
+    background: blur(20px);
     padding: 20px;
     border-radius: 10px;
 }
@@ -684,15 +681,15 @@ section .card_container .card_container_info:hover p{
 }
 
 .listen_share p{
-    font-size: 16px;
+    font-size: 0.8em;
     position: relative;
     text-align: center;
     margin: 50px;
 }
 
-.listen_share span{
-    font-size: 20px;
-    color: #1D8257;
+.listen_share p span{
+    font-size: 1.5em;
+    color: #BCA37F;
     font-weight: 900;
 }
 
@@ -779,13 +776,12 @@ section .card_container .card_container_info:hover p{
 }
 
 .more_information{
-    width: 90%;
     height: 600px;
-    background: rgb(0 71 21);
+    background: #008170;
     margin: 20px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    /* position: relative; */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
     box-shadow: 13px 16px 10px 0px rgba(0, 0, 0, 0.53);
     display: flex;
     align-items: center;
@@ -793,25 +789,6 @@ section .card_container .card_container_info:hover p{
     flex-direction: column;
     border-radius: 20px;
 }
-
-/* .more_information .top_time{
-    position: absolute;
-    top:20px;
-    color: #ffffff;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.more_information .top_time ul{
-    display: flex;
-    flex-direction: row;
-    color: #ffffff;
-}
-
-.more_information .top_time ul li{
-    list-style: none;
-    margin: 10px;
-} */
 
 .more_information .info_message{
     display: flex;
@@ -850,7 +827,8 @@ section .card_container .card_container_info:hover p{
 .more_information .info_contact .medium1,
 .more_information .info_contact .medium2,
 .more_information .info_contact .bottom_text{
-    font-size: 1.1em;
+    font-size: 1.5em;
+    font-weight: 400;
 }
 
 .more_information .info_contact .top_en_title,
@@ -866,7 +844,7 @@ section .card_container .card_container_info:hover p{
 .more_information .info_contact.right{
     width: auto;
     height: auto;
-    color: #ffffff;
+    color: hsl(0, 0%, 100%);
 }
 
 .more_information .info_contact .top_en_title .dot.right{
@@ -874,16 +852,12 @@ section .card_container .card_container_info:hover p{
 }
 
 .more_information .info_contact .medium1.right span:nth-child(2){
-    width: 84px;
-    height: 26px;
     border-radius: 10px;
     text-align: center;
     background: #6100FF;
 }
 
 .more_information .info_contact .medium2.right span:nth-child(2){
-    width: 84px;
-    height: 26px;
     border-radius: 10px;
     text-align: center;
     background: #6100FF;
@@ -913,7 +887,7 @@ section .card_container .card_container_info:hover p{
     justify-content: center;
 }
 
-@media screen and (min-width:200px) and (max-width:857px) {
+@media screen and (min-width:200px) and (max-width:1021px) {
     .home {
         top: -12px;
         left: -10px;
@@ -1080,7 +1054,7 @@ section .card_container .card_container_info:hover p{
     .more_information .info_contact .medium1,
     .more_information .info_contact .medium2,
     .more_information .info_contact .bottom_text {
-        font-size: 0.5em;
+        font-size: 1em;
     }
 
     .more_information .bottom_info {
@@ -1090,12 +1064,14 @@ section .card_container .card_container_info:hover p{
     .more_information .cut_line {
         height: 0px;
     }
+
+
 }
 
 @media screen and (min-width:360px) and (max-width:430px){
     .bg{
         background-size: cover;
-        background-position: -255px;
+        background-position: -490px;
     }
 
     .more_information{
@@ -1113,6 +1089,6 @@ section .card_container .card_container_info:hover p{
 
     .listen_info .listen_info_box{
         height: 570px;
-        justify-content: center
+        justify-content: center;
     }
 }
