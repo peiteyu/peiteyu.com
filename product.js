@@ -25,7 +25,7 @@ const images = [
 const productImage = document.getElementById("productImage");
 const dotsContainer = document.getElementById("dotsContainer");
 const rightTopImgtext = document.getElementById("rightTopImgtext");
-const textContainer1 = document.querySelector('.imgContent');
+// const textContainer1 = document.querySelector('.imgContent');
 let currentIndex = 0; // 當前顯示的圖片索引
 const prevButton = document.getElementById("leftButton");
 const nextButton = document.getElementById("rightButton");
@@ -40,11 +40,30 @@ const nextButton = document.getElementById("rightButton");
 //     updateDots();
 //   }, 5300);
 // }
-
-
 function updateImage() {
-    const imageUrl = images[currentIndex].URL;
-    textContainer1.textContent = images[currentIndex].Text;
+  const imageUrl = images[currentIndex].URL;
+  const textContainer1 = document.getElementById("imgContent"); // 获取容器
+
+  if (images[currentIndex].Text.trim() !== "") {
+    // 文本不为空
+    if (!textContainer1) {
+      // 如果容器不存在，创建文本容器
+      const newContainer = document.createElement("div");
+      newContainer.id = "imgContent";
+      newContainer.className = "imgContent";
+      newContainer.textContent = images[currentIndex].Text;
+      rightTopImgtext.appendChild(newContainer);
+    } else {
+      // 如果容器已存在，仅更新文本内容
+      textContainer1.textContent = images[currentIndex].Text;
+    }
+  } else {
+    // 文本为空，删除文本容器（如果存在）
+    if (textContainer1) {
+      textContainer1.remove();
+    }
+  }
+    
     productImage.style.transform = "scale(0)"; // 先縮小
     setTimeout(function () {
       productImage.src = imageUrl; // 更新圖片
@@ -69,7 +88,6 @@ function updateDots() {
       currentIndex = i;
       updateImage();
       updateDots(); // 更新指示點狀態
-      changeImgcontent();
     });
     // 再添加至dotsContainer
     dotsContainer.appendChild(dot);
@@ -84,7 +102,6 @@ prevButton.addEventListener("click", function () {
   }
   updateImage();
   updateDots();
-  changeImgcontent();
 });
 
 nextButton.addEventListener("click", function () {
@@ -95,7 +112,6 @@ nextButton.addEventListener("click", function () {
   }
   updateImage();
   updateDots();
-  changeImgcontent();
 });
 
 
