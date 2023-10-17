@@ -1,4 +1,4 @@
-const listItems = document.querySelectorAll('#myList li');
+const listItems = document.querySelectorAll('li');
 let delay = 0;
 window.addEventListener('load', function() {   
     listItems.forEach(item => {
@@ -23,18 +23,18 @@ hambur.addEventListener('click',function(){
     }
 })
 
-const toTop = document.getElementById('toTop');
-window.addEventListener('scroll', function() {
-  const windowHeight = window.scrollY;
-  if (windowHeight > 400){
-    toTop.style.rotate = "-90deg";
-    up.innerHTML = "toTop";
-  }else{
-    toTop.style.rotate = "90deg";
-    up.innerHTML = "scroll";
-  }
-});
+// const toTop = document.getElementById('toTop');
+// window.addEventListener('scroll', function() {
+//   const windowHeight = window.scrollY;
+//   if (windowHeight > 400){
+//     toTop.style.rotate = "-90deg";
+//     up.innerHTML = "toTop";
+//   }else{
+//     toTop.style.rotate = "90deg";
+//     up.innerHTML = "scroll";
+//   }
+// });
 
-toTop.addEventListener('click',function () {
-  document.documentElement.scrollTop = 0;
-})
+// toTop.addEventListener('click',function () {
+//   document.documentElement.scrollTop = 0;
+// })

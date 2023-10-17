@@ -3,7 +3,6 @@
     margin:0px;
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    overflow-x: hidden;
     letter-spacing: 1.5px;
 }
 
@@ -176,61 +175,77 @@ header{
 }
 
 .navbar{
-    width: auto;
-    height: auto;
-    position: absolute;
-    top:20px;
-    right: 20px;
-    color: #000000;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:auto;
+    background: rgba(255, 255, 255, 0.5);;
+    z-index: 999;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+    font-weight: 900;
+    
+}
+  
+.navbar #menu{
+    margin: 20px;
 }
 
-.navbar .more{
-    height: 80px;
-    overflow: hidden;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
-    font-weight: 600;
+ul{
+    float:right;
+    display:flex;
+    list-style:none;
 }
-
-.navbar .more:hover{
-    height: 196px;
-    overflow: hidden;
-}
-
-
-.navbar #myList{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.navbar .img_icon{
-    width: 20px;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5px;
-}
-
-.navbar ul li{
-    list-style: none;
-    margin: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  
+ul li{
     opacity: 0;
-    transition: opacity 0.5s;
-    transition-delay: 1s;
+    margin:20px;
 }
-
+  
 a{
-    cursor: pointer;
-    color: #000000;
-    text-decoration: none;
-    font-weight: 600;
+    text-decoration:none;
+    color:#000000;
+}
+  
+#logo img{
+    width: 200%;
 }
 
+#logo{
+    float:left;
+    width: 200px;
+}
+  
+li .dropdown {
+    position:relative;
+}
+  
+.dropdown-content {
+    opacity:0;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: flex;
+    flex-direction:column;
+}
+  
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+  
+.dropdown:hover .dropdown-content {
+    opacity:1;
+}
+
+/* 設定所有section樣式 */
 
 section{
     width: 100%;
@@ -383,20 +398,23 @@ section{
 }
 
 .container_see .wasabi_brief_intro .real_img{
+    width: 100%;
     display: flex;
     max-height: 460px;
     align-items: center;
+    overflow: hidden;
+}
+
+.container_see .wasabi_brief_intro .real_img .divImg{
+    max-width: 33.33%;
+    height: auto;
+    margin: 10px;
 }
 
 .container_see .wasabi_brief_intro .real_img img{
-    width: 80%;
+    width: 100%;
     margin: 10px;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
-}
-
-
-.container_see .wasabi_brief_intro .real_img img:hover{
-    width: 100%;
 }
 
 .container_see .wasabi_brief_intro .wasabi_img img{
@@ -449,7 +467,7 @@ section{
 
 .container_see .function_explanation .human_img{
     width: 250px;
-    height: 600px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center
@@ -469,9 +487,7 @@ section{
 }
    
 .function_explanation .humaninfo{
-    min-height: 560px;
-    display: flex;
-    flex-direction: column;
+    min-height: 660px;
     flex-wrap: wrap;
     color: rgb(255, 255, 255)
 }
@@ -486,7 +502,7 @@ section{
 }
 
 .function_explanation .human .ageInfo{
-    width: 400px;
+    width: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -522,7 +538,7 @@ section{
 } */
 
 .function_explanation .human .ageInfo .content .bottom_text{
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 .function_explanation .human.human_Age_info .line{
@@ -542,7 +558,7 @@ section{
 .function_explanation .humaninfo .human_Sugar_info{
     position: relative;
     top: 70px;
-    left: -50px;
+    left: 10px;
 }
 
 .function_explanation .human.human_Sugar_info .line{
@@ -902,30 +918,54 @@ section .card_container .card_container_info:hover p{
 
     .navbar {
         position: fixed;
-        top: -1000px;
+        top: -100vh;
         right: 0px;
         width: 100%;
         height: 100vh;
         background: #138353;
         opacity: 1;
         z-index: 998;
-        border-radius: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
 
     .navbar.active {
         position: fixed;
-        top: 0px;
+        top: 0;
         right: 0px;
         width: 100%;
         height: 100vh;
         background: #138353;
         opacity: 1;
         z-index: 998;
-        border-radius: 0px;
+        display: flex;
+
     }
 
-    .navbar #myList{
+    ul {
+        display: flex;
+        list-style: none;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #logo img{
+        width: 100%;
+        scale: 2;
+    }
+
+    .dropdown{
+        position: relative;
+    }
+
+    .dropdown-content{
+        opacity: 0;
+        position: absolute;
+        top: -70px;
+        left: 70px;
     }
 
     .left_title {
@@ -988,7 +1028,7 @@ section .card_container .card_container_info:hover p{
     }
 
     .container_see .function_explanation {
-        top: -300px; 
+        top: -80px; 
     }
 
     .function_explanation .humaninfo {
@@ -1014,6 +1054,18 @@ section .card_container .card_container_info:hover p{
     .function_explanation .humaninfo .human_Se_info .line,
     .function_explanation .humaninfo .human_C_info .line {
         width: 0;
+    }
+
+    .container_see .function_explanation .human_img img{
+        width: 120px;
+    }
+    
+    .container_see .function_explanation .human_img #img1{
+        width: 90px;
+    }
+    
+    .container_see .function_explanation .human_img #img4{
+        width: 65px;
     }
 
     section .card_container .card_container_info {

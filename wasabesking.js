@@ -1,4 +1,4 @@
-const listItems = document.querySelectorAll('#myList li');
+const listItems = document.querySelectorAll('li');
 let delay = 0;
 window.addEventListener('load', function() {   
     listItems.forEach(item => {

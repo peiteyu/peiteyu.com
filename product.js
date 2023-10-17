@@ -45,7 +45,7 @@ function updateImage() {
   const textContainer1 = document.getElementById("imgContent"); // 获取容器
 
   if (images[currentIndex].Text.trim() !== "") {
-    // 文本不为空
+    // 文字不為空
     if (!textContainer1) {
       // 如果容器不存在，创建文本容器
       const newContainer = document.createElement("div");
@@ -182,5 +182,14 @@ fullscreenButton.addEventListener("click", () => {
   }
 });
 
-
+const listItems = document.querySelectorAll('li');
+let delay = 0;
+window.addEventListener('load', function() {   
+    listItems.forEach(item => {
+      setTimeout(() => {
+        item.style.opacity = '1';
+      }, delay);
+      delay += 200; // 延遲每個項目的顯示時間
+    });
+});
 
