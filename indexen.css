@@ -264,17 +264,19 @@ section {
 }
 
 .Technology_Agent_title {
-    position: absolute;
-    top: -10%;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
+    display: flex;
+    justify-content: center;
     color: #ffffff;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
     transition-delay: 0.5s;
+
 }
 
 .Technology_Agent_title h1 {
-    font-size: 4rem;
+    margin-top: 50px;
+    font-size: 3.5rem;
+    text-align: center;
 }
 
 #s1 .boxfor_content {
@@ -284,7 +286,6 @@ section {
     flex-wrap: wrap;
     position: relative;
     justify-content: center;
-    margin-top: 240px;
 }
 
 #s1 .boxfor {
@@ -832,7 +833,7 @@ section .card_container .card_container_info:hover p {
 }
 
 .container_listen .listen_info {
-    width: 95%;
+    max-width: 90%;
     height: auto;
     position: relative;
     display: flex;
@@ -1222,16 +1223,21 @@ section .card_container .card_container_info:hover p {
 .more_information .info_message {
     display: flex;
     position: relative;
-    left: -30px;
     margin-top: 20px;
 }
 
-.more_information ul {
+.more_information .info_message ul {
     display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.more_information ul li {
-    padding: 10px;
+.more_information .info_message ul li {
+    width: 40px;
+}
+
+.more_information .info_message ul li img{
+    width: 100%;
 }
 
 .more_information .info_contact .top_en_title {
@@ -1256,7 +1262,7 @@ section .card_container .card_container_info:hover p {
 .more_information .info_contact .medium1,
 .more_information .info_contact .medium2,
 .more_information .info_contact .bottom_text {
-    font-size: 1.1em;
+    font-size: 1.5em;
 }
 
 .more_information .info_contact .top_en_title,
@@ -1306,7 +1312,6 @@ section .card_container .card_container_info:hover p {
     width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     position: relative;
     justify-content: space-evenly;
     align-content: center;
@@ -1581,7 +1586,7 @@ section .card_container .card_container_info:hover p {
     .more_information .info_contact .medium1,
     .more_information .info_contact .medium2,
     .more_information .info_contact .bottom_text {
-        font-size: 0.5em;
+        font-size: 1.5em;
     }
 
     .more_information .bottom_info {
@@ -1622,13 +1627,14 @@ section .card_container .card_container_info:hover p {
     }
 }
 
-@media screen and (min-width:360px) and (max-width:430px){
+@media screen and (min-width:0px) and (max-width:430px){
     #s1 .left_section_title{
         height: 235px;
     }
 
     .Technology_Agent_title h1{
         font-size: 2rem;
+        text-align: center;
     }
 
     .container_eat .left_section_title,
@@ -1660,6 +1666,12 @@ section .card_container .card_container_info:hover p {
     .more_information{
         left: 0%;
         transform: translateX(0%);
+    }
+
+    .more_information .info_contact .medium1,
+    .more_information .info_contact .medium2,
+    .more_information .info_contact .bottom_text {
+        font-size: 1em;
     }
 
     .Copyright span{

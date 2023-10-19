@@ -403,6 +403,7 @@ section{
     display: flex;
     max-height: 460px;
     align-items: center;
+    justify-content: center;
     overflow: hidden;
 }
 
@@ -557,19 +558,19 @@ section{
 
 .function_explanation .humaninfo .human_Age_info{
     position: relative;
-    top: 35px;
+    top: 0px;
     left: -50px;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
 }
 
 .function_explanation .humaninfo .human_Sugar_info{
     position: relative;
-    top: 100px;
+    top: 0px;
     left: 15px;
 }
 
 .function_explanation .human.human_Sugar_info .line{
-    width: 115px;
+    width: 0px;
     height: 5px;
     border-radius: 2px;
     background: #F1B4BB;
@@ -577,7 +578,7 @@ section{
 
 .function_explanation .humaninfo .human_Se_info{
     position: relative;
-    top: 155px;
+    top: 0px;
     left: -25px;
 }
 
@@ -590,7 +591,7 @@ section{
 
 .function_explanation .humaninfo .human_C_info{
     position: relative;
-    top: 240px;
+    top: 0px;
     left: -60px;
 }
 
@@ -722,7 +723,7 @@ section .card_container .card_container_info:hover p{
 
 
 .listen_info{
-    width: 100%;
+    max-width: 95%;
     height: auto;
     position: relative;
     display: flex;
@@ -815,21 +816,25 @@ section .card_container .card_container_info:hover p{
     border-radius: 20px;
 }
 
-.more_information .info_message{
+.more_information .info_message {
     display: flex;
     position: relative;
-    left: -30px;
     margin-top: 20px;
 }
 
-.more_information ul{
+.more_information .info_message ul {
     display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.more_information ul li{
-    padding: 10px;
+.more_information .info_message ul li {
+    width: 40px;
 }
 
+.more_information .info_message ul li img{
+    width: 100%;
+}
 .more_information .info_contact .top_en_title{
     font-size: 2em;
     display: flex;
@@ -852,7 +857,7 @@ section .card_container .card_container_info:hover p{
 .more_information .info_contact .medium1,
 .more_information .info_contact .medium2,
 .more_information .info_contact .bottom_text{
-    font-size: 1.1em;
+    font-size: 1.5em;
 }
 
 .more_information .info_contact .top_en_title,
@@ -902,17 +907,19 @@ section .card_container .card_container_info:hover p{
     width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     position: relative;
-    justify-content: space-evenly;
     align-content: center;
-    margin-top: 55px;
+    margin-top: 40px;
 }
 
 .Copyright span{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (min-width:360px) and (max-width:430px) {
+
 }
 
 @media screen and (min-width:200px) and (max-width:1021px) {
@@ -959,7 +966,7 @@ section .card_container .card_container_info:hover p{
     ul {
         display: flex;
         list-style: none;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
     }
@@ -1130,7 +1137,7 @@ section .card_container .card_container_info:hover p{
     .more_information .info_contact .medium1,
     .more_information .info_contact .medium2,
     .more_information .info_contact .bottom_text {
-        font-size: 0.5em;
+        font-size: 1em;
     }
 
     .more_information .bottom_info {
@@ -1156,9 +1163,13 @@ section .card_container .card_container_info:hover p{
     .Copyright span{
         text-align: center;
     }
-
+    /* 功效 */
     .function_explanation .humaninfo{
         align-content: center;
+    }
+
+    .container_see .function_explanation{
+        top:70px;
     }
 
     .listen_info .listen_info_box{
@@ -1168,5 +1179,9 @@ section .card_container .card_container_info:hover p{
 
     section .card_container .card_container_info .card_info_subtitle p{
         font-size: 0.5em;
+    }
+
+    .container_see .wasabi_brief_intro .wasabi_text h1{
+        font-size: 2em;
     }
 }

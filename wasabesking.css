@@ -402,6 +402,7 @@ section{
     display: flex;
     max-height: 460px;
     align-items: center;
+    justify-content: center;
     overflow: hidden;
 }
 
@@ -806,19 +807,24 @@ section .card_container .card_container_info:hover p{
     border-radius: 20px;
 }
 
-.more_information .info_message{
+.more_information .info_message {
     display: flex;
     position: relative;
-    left: -30px;
     margin-top: 20px;
 }
 
-.more_information ul{
+.more_information .info_message ul {
     display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.more_information ul li{
-    padding: 10px;
+.more_information .info_message ul li {
+    width: 40px;
+}
+
+.more_information .info_message ul li img{
+    width: 100%;
 }
 
 .more_information .info_contact .top_en_title{
