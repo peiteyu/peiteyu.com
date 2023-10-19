@@ -270,7 +270,7 @@ section{
     align-items: center;
     color: #000000;
     position: absolute;
-    top:0px;
+    top:-60px;
     left: 10px;
     background: #ffffff;
     letter-spacing: 2px;
