@@ -442,7 +442,11 @@ section{
     font-size: 1.5em;
     font-weight: 500;
     margin: 20px;
+    line-height: 2;
+    letter-spacing: 1.5px;
+    color: #FFF2D8;
 }
+
 
 .container_see .function_explanation{
     width: auto;
