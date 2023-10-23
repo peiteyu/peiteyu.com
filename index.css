@@ -135,14 +135,6 @@ header {
     margin-left: 150px;
 }
 
-/* .left_title h6 {
-    font-size: 2rem;
-    font-weight: 500;
-    background: #008170;
-    color: #ffffff;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-} */
-
 .navbar{
     position:fixed;
     top:0px;
@@ -966,12 +958,25 @@ section {
     color: #ffffff;
 }
 
+@media screen and (min-width:1000px) and (max-width:1400px) {
+    .left_title {
+        left: 30%;
+        animation: 1s out;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+    }
+    
+    @keyframes out {
+        0% {
+            left: 10%;
+        }
+    
+        100% {
+            left: 30%;
+        }
+    }
+}
 
 @media screen and (min-width:858px) and (max-width:1300px) {
-    .left_title {
-        left: 25%;
-    }
-
     .container_see .function_explanation .human_img {
         width: 130px;
         height: 290px;
@@ -1136,6 +1141,7 @@ section {
 
     .left_title h1 {
         font-size: 3em;
+        margin-left: 0px;
     }
 
     .left_title h4,

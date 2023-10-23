@@ -135,6 +135,8 @@ header {
     letter-spacing: 2px;
     animation: 1s out;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-family: 'Zhi Mang Xing', cursive;
 }
 
 
@@ -1321,11 +1323,25 @@ section .card_container .card_container_info:hover p {
     color: #ffffff;
 }
 
+@media screen and (min-width:1000px) and (max-width:1400px) {
+    .left_title {
+        left: 40%;
+        animation: 1s out;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+    }
+    
+    @keyframes out {
+        0% {
+            left: 10%;
+        }
+    
+        100% {
+            left: 40%;
+        }
+    }
+}
 
 @media screen and (min-width:858px) and (max-width:1300px) {
-    .left_title {
-        left: 25%;
-    }
 
     .container_see .function_explanation .human_img {
         width: 130px;
@@ -1476,6 +1492,7 @@ section .card_container .card_container_info:hover p {
 
     .left_title {
         left: 50%;
+        color: #ffffff;
     }
 
     @keyframes out {
@@ -1490,6 +1507,7 @@ section .card_container .card_container_info:hover p {
 
     .left_title h1 {
         font-size: 3em;
+        margin-left: 0px;
     }
 
     .left_title h4,
