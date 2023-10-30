@@ -5,9 +5,9 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-/* body{
-
-} */
+body{
+    background: #232D3F;
+}
 
 html {
     scroll-behavior: smooth;
@@ -160,9 +160,9 @@ li .dropdown {
     top: 150px;
     left: 50%;
     transform: translate(-50%, 0px);
-    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
+    color: #ffffff;
 }
 
 .document_container h1 {
@@ -171,11 +171,23 @@ li .dropdown {
 
 .document {
     display: flex;
+    flex-direction: column;
     align-items: center;
     position: relative;
     width: 100%;
     height: auto;
     margin-top: 100px;
+}
+
+.document::after{
+    content: "";
+    position: absolute;
+    bottom:-50px;
+    border: none;
+    border-top: 6px dashed #138353;
+    color: #fff;
+    height: 1px;
+    width: 100%;
 }
 
 .document h1 {
@@ -195,25 +207,59 @@ li .dropdown {
 }
 
 .document .artitcle .div {
+    position: relative;
     display: flex;
     flex-direction: row;
     margin: 20px;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+    font-weight: 800;
 }
 
 .document .artitcle .div:hover{
-    font-size: 18px;
+    background-color: #f1f1f1;
+    color: #000000;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
 }
 
+
+/* .document .article .div {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    font-weight: 800;
+    /* overflow: hidden; 添加这行以隐藏伪元素超出的部分 */
+
+
+.document .article .div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(to right, #f1f1f1 0%, #f1f1f1 50%, #000000 50%, #000000 100%);
+    transition: width 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    z-index: -1; /* 将伪元素置于底层 */
+}
+
+.document .article .div:hover::before {
+    width: 100%; /* 在悬停时扩展伪元素的宽度 */
+} */
+
+
+
 .document .artitcle .div a {
     cursor: pointer;
-    color: #000000;
+    color: #008170;
     text-decoration: none;
     font-weight: 600;
-    background: rgba(29, 130, 87, 0.5);
     padding: 10px;
     border-bottom-right-radius: 20px;
+}
+
+@media screen and (min-width:200px) and (max-width:1024px) {
+
 }
 
 @media screen and (min-width:200px) and (max-width:1024px) {
