@@ -911,6 +911,7 @@ section .card_container .card_container_info:hover p{
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #f1f1f1;
 }
 
 @media screen and (min-width:200px) and (max-width:1021px) {

@@ -382,7 +382,7 @@ section {
     height: 0;
     border-style: solid;
     border-width: 13.9px 8px 0 8px;
-    border-color: #000000 transparent transparent transparent;
+    border-color: #ffffff transparent transparent transparent;
     border-radius: 2px;
 }
 
@@ -831,7 +831,7 @@ section .card_container .card_container_info:hover p {
 }
 
 .container_listen .listen_info {
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
     position: relative;
     display: flex;
@@ -1088,7 +1088,7 @@ section .card_container .card_container_info:hover p {
     height: 0;
     border-style: solid;
     border-width: 13.9px 8px 0 8px;
-    border-color: #000000 transparent transparent transparent;
+    border-color: #ffffff transparent transparent transparent;
     border-radius: 2px;
 }
 
@@ -1109,7 +1109,7 @@ section .card_container .card_container_info:hover p {
     width: 100%;
     height: auto;
     position: relative;
-    margin-bottom: 100px;
+
 }
 
 .container_environment .img_enviroment_box {
@@ -1654,7 +1654,9 @@ section .card_container .card_container_info:hover p {
     .container_eat .left_section_title,
     .container_listen .left_section_title,
     .container_find .left_section_title{
+        font-size: 1em;
         height: 265px;
+        left: 0px;
     }
 
     .container_find .find_info .find_map {
@@ -1663,18 +1665,17 @@ section .card_container .card_container_info:hover p {
     }
 
     .left_section_title {
-        height: 210px;
+        height: 285px;
         top: 0px;
-        left: 10px;
+        left: 0px;
     }
 
     .container_environment .img_enviroment_box{
-        height: 300px;
+        height: 500px;
     }
 
     .prev-button, .next-button{
-        top: 20%;
-        transform: translateY(-20%);
+        top: 50%;
     }
 
     .more_information{
