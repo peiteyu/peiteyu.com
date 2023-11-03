@@ -541,13 +541,12 @@ section {
 }
 
 .container_listen .listen_info .listen_info_box .box1 {
-    width: 200px;
+    max-width: 200px;
     height: 200px;
     border-radius: 20px;
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     overflow: hidden;
     transition: .5s ease-in-out;
@@ -559,8 +558,8 @@ section {
     width: 200px;
     height: auto;
     transition: .5s ease-in-out;
-    font-size: 2em;
-    font-weight: 500;
+    font-size: 1.5em;
+    font-weight: 900;
     color: #ffffff;
 }
 
@@ -573,9 +572,22 @@ section {
 
 .container_listen .listen_info .listen_info_box:hover {
     scale: 1.1;
-    z-index: 999;
 }
 
+/* box6 */
+.container_listen .listen_info .box1 .separation {
+    display: flex;
+    position: relative;
+}
+.container_listen .listen_info .box1 .separation .series{
+    width: 40px;
+    height: 40px;
+    background-color: #0F0F0F;
+    border-radius: 20px;
+    margin: 10px;
+    text-align: center;
+    line-height: 40px;
+}
 
 /* 我們在哪 */
 .container_find {
@@ -911,7 +923,7 @@ section {
 .more_information .info_contact .medium2,
 .more_information .info_contact .bottom_text {
     font-size: 1.5em;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .more_information .info_contact .top_en_title,
@@ -1251,7 +1263,7 @@ section {
     .more_information .info_contact .medium1,
     .more_information .info_contact .medium2,
     .more_information .info_contact .bottom_text {
-        font-size: 0.5em;
+        font-size: 1em;
     }
 
     .more_information .bottom_info {

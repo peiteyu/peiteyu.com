@@ -905,7 +905,21 @@ section .card_container .card_container_info:hover p {
 
 .container_listen .listen_info .listen_info_box:hover {
     scale: 1.1;
-    z-index: 999;
+}
+
+/* box6 */
+.container_listen .listen_info .box1 .separation {
+    display: flex;
+    position: relative;
+}
+.container_listen .listen_info .box1 .separation .series{
+    width: 40px;
+    height: 40px;
+    background-color: #0F0F0F;
+    border-radius: 20px;
+    margin: 10px;
+    text-align: center;
+    line-height: 40px;
 }
 
 
@@ -1184,13 +1198,10 @@ section .card_container .card_container_info:hover p {
 
 /* footer */
 .more_information {
-    width: 90%;
     height: 600px;
     background: #008170;
     margin: 20px;
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
     box-shadow: 13px 16px 10px 0px rgba(0, 0, 0, 0.53);
     display: flex;
     align-items: center;
@@ -1600,7 +1611,7 @@ section .card_container .card_container_info:hover p {
     .more_information .info_contact .medium1,
     .more_information .info_contact .medium2,
     .more_information .info_contact .bottom_text {
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     .more_information .bottom_info {

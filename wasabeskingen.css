@@ -787,7 +787,7 @@ section .card_container .card_container_info:hover p{
     height: auto;
     transition: .5s ease-in-out;
     font-size: 1.5em;
-    font-weight: 500;
+    font-weight: 900;
     color: #ffffff;
 }
 
@@ -800,7 +800,21 @@ section .card_container .card_container_info:hover p{
 
 .listen_info .listen_info_box:hover{
     scale: 1.1;
-    z-index: 999;
+}
+
+/* box6 */
+.listen_info .box1 .separation {
+    display: flex;
+    position: relative;
+}
+.listen_info .box1 .separation .series{
+    width: 40px;
+    height: 40px;
+    background-color: #0F0F0F;
+    border-radius: 20px;
+    margin: 10px;
+    text-align: center;
+    line-height: 40px;
 }
 
 .more_information{
@@ -967,7 +981,7 @@ section .card_container .card_container_info:hover p{
     ul {
         display: flex;
         list-style: none;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
@@ -1111,6 +1125,12 @@ section .card_container .card_container_info:hover p{
 
     .listen_info {
         height: auto;
+    }
+
+    .listen_info .listen_info_box{
+        width: 600px;
+        height: auto;
+        justify-content: center;
     }
 
     .container_environment .img_enviroment_box .img_title {
