@@ -261,6 +261,8 @@ li .dropdown {
 /* DM下載點 */
 
 .document_container .document.DM{
+    display: flex;
+    align-items: flex-start;
     margin-bottom: 100px;
 }
 
