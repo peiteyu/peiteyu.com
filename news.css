@@ -29,27 +29,84 @@ html {
 /* -------------------------------------------------------- */
 /* .cube-one{
     position: fixed;
-    top:20px;
-    left: 50px;
-    width: 800px;
-    height: 800px;
-    background-color: #183D3D;
-    animation: cubeMove cubic-bezier(0.075, 0.82, 0.165, 1) 5s infinite alternate-reverse;
+    top: 50px;
+    left: 265px;
+    width: 500px;
+    height: 500px;
+    background-color: rgba(195, 176, 145,0.8);
+    animation: cubeMoveONE 5s infinite alternate-reverse;
 }
 
-@keyframes cubeMove{
+@keyframes cubeMoveONE{
     0%{
-        top:60px;
-        left: 10px;
+        scale: 1;
     }
     100%{
-        top:10px;
-        left: -10px;
+        scale: 1.2;
+    }
+}
+
+.cube-two{
+    position: fixed;
+    top: 177px;
+    right: 20%;
+    width: 180px;
+    height: 180px;
+    background-color: #8E806A;
+    animation: cubeMoveTWO 5s infinite alternate-reverse;
+    animation-delay: 2s;
+}
+
+@keyframes cubeMoveTWO{
+    0%{
+        scale: 1;
+    }
+    100%{
+        scale: 1.2;
+    }
+}
+
+.cube-three{
+    position: fixed;
+    bottom: 50px;
+    left: 555px;
+    width: 260px;
+    height: 260px;
+    background-color: #E4CDA7;
+    animation: cubeMoveTHREE 5s infinite alternate-reverse;
+    animation-delay: 2s;
+}
+
+@keyframes cubeMoveTHREE{
+    0%{
+        scale: 1;
+    }
+    100%{
+        scale: 1.2;
+    }
+}
+
+.cube-four{
+    position: fixed;
+    bottom: 50px;
+    right: 555px;
+    width: 330px;
+    height: 330px;
+    background-color: #FFE6BC;
+    animation: cubeMoveFOUR cubic-bezier(0.075, 0.82, 0.165, 1) 5s infinite alternate-reverse;
+}
+
+@keyframes cubeMoveFOUR{
+    0%{
+        scale: 1;
+    }
+    100%{
+        scale: 1.2;
     }
 } */
 
 /* -------------------------------------------------------- */
-
+/* 新聞剪貼簿 */
 .news-scrapbook-box-latest{
     position:relative;
     max-width:80%;
@@ -62,7 +119,15 @@ html {
     display:flex;
     flex-direction:row;
     align-items:center;
+    margin-left: 140px;
 }
+
+@media screen and (max-width:490px){
+    .news-scrapbook-box-latest .news-scrapbook-title-box-latest{
+        margin-left: 20px;
+    }
+}
+
   
 .news-scrapbook-box-latest .news-scrapbook-title-box-latest img{
     width:95px;
@@ -98,7 +163,6 @@ html {
 .news-scrapbook-box-latest .news-scrapbook-content-box .news-scrapbook-content-img{
     min-width:200px;
     height:200px;
-    background:#183D3D;
     border-radius:10px;
 }
   
@@ -106,6 +170,7 @@ html {
     width:100%;
     height: 200px;
     border-radius:10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.8);
 }
   
 .news-scrapbook-box-latest .news-scrapbook-content-box .news-scrapbook-content-text{
@@ -121,7 +186,7 @@ html {
     background: #ff3434;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
 }
-  
+
 .news-scrapbook-box-latest .news-scrapbook-content-box .news-scrapbook-content-text .content-text-fromwhere{
     position:relative;
     font-weight:900;
@@ -170,4 +235,41 @@ html {
 
 .bg-box img{
     width: 100%;
+}
+
+/* ----------------------------------------------------- */
+/* 追蹤我們 */
+
+.follow-us-box{
+    position: fixed;
+    width: auto;
+    height: auto;
+    bottom: 60px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.follow-us-box .follow-us-title{
+    writing-mode: vertical-lr;
+    font-size: 32px;
+    font-weight: 900;
+    color:#FFC9C9;
+    margin-bottom: 20px;
+}
+
+.follow-us-box .follow-us-box-content{
+    position: relative;
+}
+
+.follow-us-box .follow-us-box-content .box-content{
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.follow-us-box .follow-us-box-content .box-content img{
+    width: 100%;
+    height: 50px;
+    padding: 5px;
 }
