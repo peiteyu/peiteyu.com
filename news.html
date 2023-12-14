@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="news.css">
+    <link rel="icon" href="ICON.ico" type="image/x-icon">
+    <title>新聞剪貼簿</title>
+</head>
+<body>
+    <!-- 導覽列 -->
+    <div class="hambur" id="hambur_active">
+        <svg xmlns="http://www.w3.org/2000/svg" width="576" height="400" viewBox="0 0 576 400" fill="none">
+            <path d="M1.5 230L167 395.5L201.5 230L330.5 325.5L342.75 163M355 0.5L342.75 163M342.75 163L459.125 138.5M575.5 114L459.125 138.5M459.125 138.5L555.5 395.5" stroke="white" stroke-width="4"/>
+        </svg>
+    </div>
+    <div class="navbar" id="navbar_active">
+        <ul id="logo">
+          <li><a href="index.html"><img src="LOGO.png" alt=""></a></li>
+        </ul>
+        <ul id="menu">
+          <li class="dropdown">
+            各類資訊
+            <div class="dropdown-content">
+              <a href="document.html">文獻</a>
+            </div>
+          </li>
+          <li><a href="about.html">關於公司</a></li>
+          <li><a href="product.html">產品DM</a></li>
+          <li><a href="qanda.html">Q&A</a></li>
+          <li><a href="wasabesking.html">關於葵地淇</a></li>
+          <li><a href="https://www.youtube.com/@Peiteyu">YOUTUBE</a></li>
+        </ul>
+    </div>
+    <!-- <div class="cube-one"></div> -->
+    <!-- 新聞剪貼簿 -->
+    <div class="news-scrapbook-box-latest">
+        <div class="news-scrapbook-title-box-latest">
+            <h1>新聞剪貼簿</h1>
+            <img src="right.svg" alt="打勾勾">
+        </div>
+        <div class="news-scrapbook-content-box">
+            <div class="news-scrapbook-new-highlight">
+                <span>NEW</span>
+            </div>
+            <div class="news-scrapbook-content-img">
+                <img src="山葵圖.png" alt="大頭">
+            </div>
+            <div class="news-scrapbook-content-text">
+                <div class="content-text-title">
+                    <h1><a href="https://www.edh.tw/article/33915">山葵防失智、提升兩倍肝臟解毒力！研究：每天1小匙大腦年輕4歲</a></h1>
+                </div>
+                <div class="content-text-fromwhere">
+                    <span id="formwhere">出至:</span><span id="source">早安健康</span>
+                </div>
+                <div class="content-text-time-label">
+                    <div class="line"></div>
+                    <div class="update-date">
+                        <span>2023-12-14</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 上面新聞過段時間會放在這邊的 -->
+    <div class="news-scrapbook-box-old">
+        <div class="news-scrapbook-title-box-old">
+            <h1></h1>
+            <img src="" alt="">
+        </div>
+    </div>
+
+    <div class="bg-box">
+        <img src="wasabi_strokes.png" alt="">
+    </div>
+</body>
+<script src="navbar.js"></script>
+</html>
