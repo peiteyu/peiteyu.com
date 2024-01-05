@@ -87,12 +87,71 @@ html {
     margin-top: 10px;
 }
 
+/* Q1 */
+
+.product-container .product-question .questions .questions-ask .content-box .click-show-video{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
+    background: #b7d6fa;
+    cursor: pointer;
+}
+
+.product-container .product-question .questions .questions-ask .content-box .click-show-video:hover{
+    transform: scale(1.1);
+    color: aliceblue;
+    background: #005AC3;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
+}
+
+.product-container .product-question .questions .questions-ask.video-box{
+    display:flex;
+    flex-direction: column;
+}
+
+.product-container .product-question .questions .questions-ask .content-box{
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
 .product-container .product-question .questions .questions-ask .Q-box{
     display: flex;
     justify-content: end;
     min-width: 40px;
     margin-right: 10px;
 }
+
+.product-container .product-question .questions .questions-ask .video-open{
+    width: 100%;
+    height:0px;
+    overflow: hidden;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+}
+
+.product-container .product-question .questions .questions-ask .video-open.active{
+    width: 100%;
+    min-height: 500px;
+    overflow-y: auto;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+}
+
+.product-container .product-question .questions .questions-ask .video-open .video-title{
+    width: 150px;
+    margin: auto;
+}
+
+.product-container .product-question .questions .questions-ask .video-open iframe{
+    width: 100%;
+    min-height:500px;
+    padding: 20px;
+}
+/* ---------------------------------- */
 
 .product-container .product-question .questions .questons-ans .A-box{
     display: flex;
@@ -128,5 +187,9 @@ html {
     }
     .bg-box{
         bottom:-30px;
+    }
+
+    .product-container .product-question .questions .questions-ask .content-box .click-show-video{
+        height: auto;
     }
 }
