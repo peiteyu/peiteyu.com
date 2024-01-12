@@ -133,14 +133,14 @@ window.addEventListener('scroll', function () {
   else{
     eatPosition.style.top =  "-500px";
   }
-  if(windowHeight >= 1800 && windowHeight <=2760){
-    title_onePosition.style.opacity = "1";
-    title_onePosition.style.zIndex = "2";
-    title_onePosition.style.position = "fixed";
-  }
-  else{
-    title_onePosition.style.position = "absolute";
-    title_onePosition.style.opacity = "0";
-  }
+  // if(windowHeight >= 1800 && windowHeight <=2760){
+  //   title_onePosition.style.opacity = "1";
+  //   title_onePosition.style.zIndex = "2";
+  //   title_onePosition.style.position = "fixed";
+  // }
+  // else{
+  //   title_onePosition.style.position = "absolute";
+  //   title_onePosition.style.opacity = "0";
+  // }
   // console.log(windowHeight);
 });
