@@ -26,6 +26,19 @@ html {
     box-shadow: transparent;
 }
 
+/* LINE */
+
+.Line{
+    width: auto;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 999;
+    overflow: hidden;
+}
+
+/* --------------- */
+
 /* 放問題的地方 */
 .product-container{
     position: relative;

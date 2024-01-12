@@ -3,6 +3,7 @@
     margin: 0px;
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
 }
 
 body{
@@ -30,7 +31,21 @@ html {
     box-shadow: transparent;
 }
 
+/* LINE */
+
+.Line{
+    width: auto;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 999;
+    overflow: hidden;
+}
+
+/* --------------- */
+
 .toTop {
+    width: 50px;
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -42,13 +57,13 @@ html {
 }
 
 .toTop svg {
-    width: 100px;
-    padding: 20px;
+    width: 50px;
+    padding: 5px;
     rotate: 90deg;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
 }
 
-.toTop h2 {
+.toTop h4 {
     color: #ffffff;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
 }
@@ -66,16 +81,17 @@ header {
     background-size: cover;
     position: absolute;
     top: 0px;
-    animation: filter 2s;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1).5s;
+    animation: filter 5s alternate-reverse infinite;
 }
 
 @keyframes filter {
     0% {
+        transform: scale(0.9);
         filter: blur(5px);
     }
 
     100% {
+        transform: scale(1);
         filter: blur(0px);
     }
 }
@@ -144,7 +160,6 @@ header {
     background: rgba(255, 255, 255, 0.5);;
     z-index: 999;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
-    font-weight: 900;
 }
   
 .navbar #menu{
@@ -155,16 +170,19 @@ ul{
     float:right;
     display:flex;
     list-style:none;
+    font-weight: 900;
 }
   
 ul li{
     opacity: 0;
     margin:20px;
+    
 }
   
 a{
     text-decoration:none;
     color:#000000;
+    
 }
   
 #logo img{
@@ -226,10 +244,22 @@ section {
     left: 10px;
     background: #ffffff;
     letter-spacing: 2px;
-    font-weight: 500;
     font-size: 1.5em;
     z-index: 2;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+}
+
+#s1 .left_section_title .top_word::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 13.9px 8px 0 8px;
+    border-color: #000000 transparent transparent transparent;
+    border-radius: 2px;
 }
 
 .Technology_Agent_title {
@@ -367,21 +397,24 @@ section {
 
 .eat_title {
     font-size: 6em;
-    position: fixed;
+    position: absolute;
     top: 30%;
-    left: 50%;
-    transform: translate(-30%, -50%);
-    z-index: -999;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    left: 40%;
+    transform: translate(0%, -50%);
+    z-index: 10;
     opacity: 1;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
 }
 
 .eat_title span:nth-child(1) {
-    color: #ffffff;
+    font-weight: 900;
+    color: #03473e;
 }
 .eat_title span:nth-child(2) {
     color: #ffffff;
+    font-weight: 300;
+    font-size: 0.5em;
+    margin-left: 10px;
 }
 
 
@@ -397,10 +430,10 @@ section {
 
 .container_eat .eat_subtitle p {
     width: 600px;
-    font-size: 4em;
+    font-size: 2em;
     text-align: center;
-    font-weight: 500;
-    color: #000000;
+    font-weight: 900;
+    color: #ffffff;
 }
 
 .container_eat .eat_button {
@@ -431,9 +464,9 @@ section {
     right: 30px;
     width: 600px;
     height: 600px;
-    background: url(葵地淇5號.jpg);
+    background: url(山葵圖.jpg);
     background-size: cover;
-    background-position: -150px;
+    background-position: 0px;
     background-repeat: no-repeat;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
@@ -916,6 +949,7 @@ section {
 }
 
 .more_information .info_contact .top_ch_title {
+    text-transform: uppercase;
     font-size: 4em;
 }
 
@@ -947,17 +981,15 @@ section {
 }
 
 .more_information .info_contact .medium1.right span:nth-child(2) {
-    width: 84px;
-    height: 26px;
     border-radius: 10px;
     text-align: center;
+    padding: 5px;
     background: #6100FF;
 }
 
 .more_information .info_contact .medium2.right span:nth-child(2) {
-    width: 84px;
-    height: 26px;
     border-radius: 10px;
+    padding: 5px;
     text-align: center;
     background: #6100FF;
 }

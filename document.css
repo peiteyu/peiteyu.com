@@ -23,14 +23,28 @@ html {
 
 ::-webkit-scrollbar-thumb {
     border-radius: 4px;
-    background-color: #1D8257;
+    background-color: #000000;
 }
 
 ::-webkit-scrollbar-track {
     box-shadow: transparent;
 }
 
+/* LINE */
+
+.Line{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 999;
+    overflow: hidden;
+}
+
+/* --------------- */
+
+
 .toTop {
+    width: 50px;
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -42,13 +56,13 @@ html {
 }
 
 .toTop svg {
-    width: 100px;
-    padding: 20px;
+    width: 50px;
+    padding: 5px;
     rotate: 90deg;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
 }
 
-.toTop h2 {
+.toTop h4 {
     color: #ffffff;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
 }
@@ -109,11 +123,13 @@ ul{
 ul li{
     opacity: 0;
     margin:20px;
+    
 }
   
-a{
+ul li a{
     text-decoration:none;
     color:#000000;
+    font-size: 16px;
 }
   
 #logo img{
@@ -212,6 +228,9 @@ li .dropdown {
     margin: 20px;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
     font-weight: 800;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .document .artitcle .div:hover{
@@ -227,10 +246,10 @@ li .dropdown {
     flex-direction: row;
     margin: 20px;
     font-weight: 800;
-    /* overflow: hidden; 添加这行以隐藏伪元素超出的部分 */
+    overflow: hidden; 
 
 
-.document .article .div::before {
+/* .document .article .div::before {
     content: "";
     position: absolute;
     top: 0;
@@ -239,22 +258,22 @@ li .dropdown {
     height: 100%;
     background: linear-gradient(to right, #f1f1f1 0%, #f1f1f1 50%, #000000 50%, #000000 100%);
     transition: width 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    z-index: -1; /* 将伪元素置于底层 */
+    z-index: -1;
 }
 
 .document .article .div:hover::before {
-    width: 100%; /* 在悬停时扩展伪元素的宽度 */
+    width: 100%; 
 } */
 
 
 
-.document .artitcle .div a {
+.document .artitcle a{
     cursor: pointer;
     color: #008170;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 900;
     padding: 10px;
-    border-bottom-right-radius: 20px;
+    margin-left: 5px;
 }
 
 

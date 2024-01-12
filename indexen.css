@@ -31,7 +31,21 @@ html {
     box-shadow: transparent;
 }
 
+/* LINE */
+
+.Line{
+    width: auto;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 999;
+    overflow: hidden;
+}
+
+/* --------------- */
+
 .toTop {
+    width: 50px;
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -43,13 +57,13 @@ html {
 }
 
 .toTop svg {
-    width: 100px;
-    padding: 20px;
+    width: 50px;
+    padding: 5px;
     rotate: 90deg;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
 }
 
-.toTop h2 {
+.toTop h4 {
     color: #ffffff;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
 }
@@ -67,16 +81,17 @@ header {
     background-size: cover;
     position: absolute;
     top: 0px;
-    animation: filter 2s;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1).5s;
+    animation: filter 5s alternate-reverse infinite;
 }
 
 @keyframes filter {
     0% {
+        transform: scale(0.9);
         filter: blur(5px);
     }
 
     100% {
+        transform: scale(1);
         filter: blur(0px);
     }
 }
@@ -162,7 +177,6 @@ header {
     font-size: 2.5em;
     font-weight: 800;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-left: 150px;
 }
 
 .navbar{
@@ -261,6 +275,19 @@ section {
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
 }
 
+#s1 .left_section_title .top_word::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 13.9px 8px 0 8px;
+    border-color: #000000 transparent transparent transparent;
+    border-radius: 2px;
+}
+
 .Technology_Agent_title {
     position: relative;
     display: flex;
@@ -308,8 +335,24 @@ section {
 }
 
 #s1 .boxfor.holmes:hover,
-#s1 .boxfor.ma:hover{
-    width: 500px;
+#s1 .boxfor.ma:hover {
+    animation: hoverBig 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform-origin: center;
+}
+
+@keyframes hoverBig {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(0.8);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 #s1 .boxfor.holmes:hover h1 {
@@ -382,7 +425,7 @@ section {
     height: 0;
     border-style: solid;
     border-width: 13.9px 8px 0 8px;
-    border-color: #ffffff transparent transparent transparent;
+    border-color: #000000 transparent transparent transparent;
     border-radius: 2px;
 }
 
@@ -464,7 +507,7 @@ section {
     width:170px;
 } */
 
-.function_explanation .humaninfo {
+/* .function_explanation .humaninfo {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -647,7 +690,7 @@ section .card_container .card_container_info:hover p {
     background: #1D8257;
     padding: 20px;
     border-radius: 10px;
-}
+} */
 
 /* 該吃什麼 */
 .container_eat {
@@ -699,21 +742,24 @@ section .card_container .card_container_info:hover p {
 }
 
 .container_eat .eat_title {
-    font-size: 6em;
+    font-size: 4em;
     position: absolute;
     top: 30%;
-    left: 50%;
+    left: 40%;
     transform: translate(-30%, -50%);
     z-index: 2;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.container_eat .eat_title span:nth-child(1) {
-    color: #ff0000;
+.eat_title span:nth-child(1) {
+    font-weight: 900;
+    color: #03473e;
 }
-
-.container_eat .eat_title span:nth-child(2) {
+.eat_title span:nth-child(2) {
     color: #ffffff;
+    font-weight: 300;
+    font-size: 0.5em;
+    margin-left: 10px;
+    text-transform:  uppercase;
 }
 
 
@@ -731,8 +777,8 @@ section .card_container .card_container_info:hover p {
     width: 600px;
     font-size: 2em;
     text-align: center;
-    font-weight: 500;
-    color: #000000;
+    font-weight: 900;
+    color: #ffffff;
 }
 
 .container_eat .eat_button {
@@ -755,6 +801,7 @@ section .card_container .card_container_info:hover p {
     text-decoration: none;
     color: #ffffff;
     font-weight: 900;
+    text-transform: capitalize;
 }
 
 .container_eat .eat_img {
@@ -763,9 +810,9 @@ section .card_container .card_container_info:hover p {
     right: 30px;
     width: 600px;
     height: 600px;
-    background: url(葵地淇5號.jpg);
+    background: url(山葵圖.jpg);
     background-size: cover;
-    background-position: -150px;
+    background-position: 0px;
     background-repeat: no-repeat;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
@@ -1109,7 +1156,7 @@ section .card_container .card_container_info:hover p {
 .left_section_title .medium_dash {
     width: 5px;
     height: 30px;
-    margin: 5px 0px 5px 4px;
+    margin: 5px 0px 5px 0px;
     background: #ffffff;
     border-radius: 10px;
 }

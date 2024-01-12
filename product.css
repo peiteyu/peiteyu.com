@@ -10,6 +10,39 @@ body{
     background: #232D3F;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: transparent;
+}
+
+/* LINE */
+
+.Line{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 999;
+    overflow: hidden;
+}
+
+/* --------------- */
+
 .svg_div svg{
     width: 200px;
     position: fixed;
@@ -152,7 +185,7 @@ li .dropdown {
 }
 
 .productContainer .leftProductImg{
-    width: 50%;
+    max-width: 700px;
     position: relative;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
     margin: 20px;
@@ -232,10 +265,19 @@ li .dropdown {
     flex-direction: column;
     padding-top: 50px;
     color: #FFF;
+    justify-content: center;
 }
 
-.productContainer .rightProductText #rightTopImgtext .imgContent{
-    min-height: 300px;
+.productContainer .rightProductText #rightTopImgtext .imgContent1{
+    margin: 50px 0pc 50px 0px;
+    height: auto;
+    font-size: 2em;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+}
+
+.productContainer .rightProductText #rightTopImgtext .imgContent2{
+    margin-top: 10px;
+    height: auto;
     font-size: 2em;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
 }
@@ -264,22 +306,21 @@ li .dropdown {
 
 .productContainer .rightProductText .goodList .list{
     position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.productContainer .rightProductText .goodList .list .list_dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #3498db;
 }
 
 .productContainer .rightProductText .goodList .list p{
     font-size: 2em;
     margin: 20px 0px 20px 20px;
-}
-
-.productContainer .rightProductText .goodList .list::before{
-    content: "";
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    top: 38px;
-    left: 5px;
-    background: #1D8257;
-    border-radius: 20px;
 }
 
 .productContainer .rightProductText p{
