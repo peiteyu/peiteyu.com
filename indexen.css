@@ -288,6 +288,8 @@ section {
     border-radius: 2px;
 }
 
+
+
 .Technology_Agent_title {
     position: relative;
     display: flex;
@@ -295,7 +297,6 @@ section {
     color: #ffffff;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
     transition-delay: 0.5s;
-
 }
 
 .Technology_Agent_title h1 {
@@ -304,72 +305,114 @@ section {
     text-align: center;
 }
 
+/* 種植地 */
+
+.Introduction {
+    position:relative;
+    top: 10%;
+    left: 90%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+    transition-delay: 0.5s;
+    margin-bottom: 100px;
+}
+
+.Introduction h1 {
+    font-size: 4rem;
+}
+
 #s1 .boxfor_content {
-    width: auto;
+    max-width: 980px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     position: relative;
-    justify-content: center;
+    margin: auto;
 }
 
-#s1 .boxfor {
-    width: 600px;
-    height: 600px;
-    background: #000000;
-    border-radius: 20px;
-    margin: 40px;
+#s1 .boxfor_content .plant_img{
+    max-width: 470px;
+    height: auto;
+}
+
+#s1 .boxfor_content .plant_img img{
+    max-width: 100%;
+}
+
+#s1 .boxfor_content .plant_text{
+    max-width: 510px;
+    padding: 20px;
+}
+
+#s1 .boxfor_content .plant_text h1{
+    font-size: 24px;
+    color: #f1f1f1;
+    margin: 20px 0px 20px 0px;
+}
+
+#s1 .boxfor_content .plant_text p{
+    color: #f1f1f1;
+    letter-spacing: 2px;
+    padding: 30px;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+.boxfor_content .plant_gallery{
+    max-width: 980px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.boxfor_content .plant_gallery h3{
+    color: #f1f1f1;
+    margin-bottom: 20px;
+}
+
+.boxfor_content .plant_gallery img{
+    width: 25%;
+    padding: 5px;
+}
+
+.boxfor_content .plant_gallery .plant_img_box{
     display: flex;
-    justify-content: center;
+}
+
+/* 代理商資訊 */
+
+#s1 .boxfor_content .agent{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#s1 .boxfor_content .agent h1{
+    position: relative;
+    height: auto;
+    margin: auto;
+    padding: 5px;
+    color: #f1f1f1;
+    font-size: 36px;
+}
+
+#s1 .boxfor_content .agent .map_content{
+    display: flex;
     align-items: center;
+    color: #f1f1f1;
 }
 
-#s1 .boxfor.holmes {
-    width: 600px;
-    background: url(工廠外觀1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
-    position: relative;
-
+#s1 .boxfor_content .agent .map_content span{
+    margin: 0px 100px 0px 100px;
 }
 
-#s1 .boxfor.holmes:hover,
-#s1 .boxfor.ma:hover {
-    animation: hoverBig 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    transform-origin: center;
-}
-
-@keyframes hoverBig {
-    0% {
-        transform: scale(1);
-    }
-    25% {
-        transform: scale(0.8);
-    }
-    50% {
-        transform: scale(1.3);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-#s1 .boxfor.holmes:hover h1 {
-    color: #ffffff;
-}
-
-#s1 .boxfor.ma {
-    width: 600px;
-    background: url(PLABS.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
-    position: relative;
-}
-
-#s1 .boxfor.ma:hover h1 {
-    color: #ffffff;
+#s1 .boxfor_content .agent img{
+    width: 100%;
+    border-radius: 20px;
 }
 
 
