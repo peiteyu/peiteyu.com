@@ -231,13 +231,14 @@ li .dropdown {
 }
   
 .dropdown-content {
-    opacity:0;
+    visibility: hidden;
     position: absolute;
+    transform: translateX(-15%);
     background-color: #f9f9f9;
     width: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
-    z-index: 1;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+    z-index: -999;
 }
   
 .dropdown-content a {
@@ -252,7 +253,7 @@ li .dropdown {
 }
   
 .dropdown:hover .dropdown-content {
-    opacity:1;
+    visibility: visible;
 }
 
 /* 設定所有section樣式 */
@@ -1008,11 +1009,13 @@ section .card_container .card_container_info:hover p{
     }
 
     .dropdown-content{
-        opacity: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        visibility: hidden;
         position: absolute;
-        top: -70px;
-        left: 70px;
-        z-index: -999;
+        left: -10%;
+        z-index: 999;
     }
 
     .left_title {
