@@ -14,7 +14,7 @@
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -154,8 +154,10 @@ li .dropdown {
     align-items: center;
     justify-content: center;
     position: absolute;
-    top:180px;
+    top:7px;
+    left: 0px;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+    
 }
 
 .company_container .left_company_info,
@@ -177,7 +179,6 @@ li .dropdown {
 .company_container .right_company_info .question .questionBox{
     height: auto;
     background-color: #008170;
-    text-align:justify;
 }
 
 .company_container .left_company_info .question h1,
@@ -189,7 +190,7 @@ li .dropdown {
 
 .company_container .left_company_info .question p,
 .company_container .right_company_info .question p{
-    font-size: 16px;
+    font-size: 14px;
     padding: 20px;
     background: #ffffff;
     font-weight: 800;
@@ -204,7 +205,7 @@ li .dropdown {
 }
 
 .company_container .middle_company_info .company_img img{
-    width: 100%;
+    width: 90%;
 }
 
 .company_container .middle_company_info .company_img img:nth-child(2){
@@ -213,7 +214,6 @@ li .dropdown {
     right: 0px;
     top:100px;
 }
-
 
 /* 品牌故事 */
 

@@ -224,13 +224,14 @@ li .dropdown {
 .document .artitcle .div {
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 20px;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
     font-weight: 800;
     align-items: center;
     padding: 5px;
     border-radius: 5px;
+    text-align: justify;
 }
 
 .document .artitcle .div:hover{
@@ -239,41 +240,17 @@ li .dropdown {
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
 }
 
-
-/* .document .article .div {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    margin: 20px;
-    font-weight: 800;
-    overflow: hidden; 
-
-
-/* .document .article .div::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: linear-gradient(to right, #f1f1f1 0%, #f1f1f1 50%, #000000 50%, #000000 100%);
-    transition: width 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    z-index: -1;
+.document .artitcle .div:hover a{
+    color: #ff0000;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
 }
-
-.document .article .div:hover::before {
-    width: 100%; 
-} */
-
-
 
 .document .artitcle a{
     cursor: pointer;
-    color: #008170;
+    color: #5cffea  ;
     text-decoration: none;
     font-weight: 900;
-    padding: 10px;
-    margin-left: 5px;
+    padding: 10px 0px 10px 0px;
 }
 
 

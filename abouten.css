@@ -8,6 +8,15 @@
     line-height: 30px;
 }
 
+.company_container{
+    top:70px;
+}
+
+.company_container .left_company_info .question h1,
+.company_container .right_company_info .question h1{
+    font-size:1.5em;
+}
+
 @media screen and (min-width:200px) and (max-width:1200px) {
     .bg{
         height: 180vh;

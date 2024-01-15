@@ -313,12 +313,7 @@ section {
     color: #f1f1f1;
     letter-spacing: 2px;
     padding: 30px;
-}
-
-#s1 .boxfor_content .plant_text p{
-    color: #f1f1f1;
-    letter-spacing: 2px;
-    padding: 30px;
+    font-size: 22px;
 }
 
 .boxfor_content .plant_gallery{
@@ -328,17 +323,17 @@ section {
     font-size: 24px;
 }
 
-/* .boxfor_content .plant_gallery .plant_img_box{
-    display: flex;
-    flex-direction: row;
-} */
-
 .boxfor_content .plant_gallery h3{
     color: #f1f1f1;
 }
 
 .boxfor_content .plant_gallery img{
-    width: 100%;
+    width: 25%;
+    padding: 5px;
+}
+
+.boxfor_content .plant_gallery .plant_img_box{
+    display: flex;
 }
 
 /* 代理商資訊 */
@@ -1335,11 +1330,23 @@ section {
         height: 235px;
     }
 
+    #s1 .boxfor_content .agent .map_content{
+        flex-direction: column;
+    }
+    
+    .boxfor_content .plant_gallery img{
+        width: 100%;
+        padding: 40px;
+    }
+
+    .boxfor_content .plant_gallery .plant_img_box{
+        flex-direction: column;
+    }
+
     .Introduction h1{
         font-size: 2rem;
     }
     
-
     .container_eat .left_section_title,
     .container_listen .left_section_title,
     .container_find .left_section_title,
