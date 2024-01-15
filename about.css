@@ -6,7 +6,7 @@
 }
 
 .bg{
-    height: 130vh;
+    height: 100vh;
     background: url(DSC00009.JPG);
     background-size: cover;
     filter: blur(8px);
@@ -212,6 +212,99 @@ li .dropdown {
     right: 0px;
     top:100px;
 }
+
+
+/* 品牌故事 */
+
+.header{
+    width: 100%;
+    height: 200px;
+    background: #035531;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 200px;
+}
+
+.header span{
+    font-size: 40px;
+    color: #f9f9f9;
+    font-weight: 900;
+}
+
+.storyBrand{
+    max-width: 980px;
+    height: auto;
+    margin: auto;
+    position: relative;
+    padding: 20px;
+}
+
+.storyBrand .photo_estab{
+    width: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.storyBrand .photo_estab h1{
+    text-align: center;
+}
+
+.storyBrand .photo_estab .photo_img{
+    width: 250px;
+    height: 250px;
+    /* background: #035531; */
+    margin: auto;
+}
+
+.storyBrand .photo_estab .photo_img img{
+    width: 100%;
+    height: 100%;
+}
+
+.storyBrand .story_content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.storyBrand .story_content .story_title{
+    position: relative;
+    margin: 100px 0px 100px 0px;
+}
+
+.storyBrand .story_content .story_title h1{
+    font-size: 32px;
+}
+
+.storyBrand .story_content .story_text{
+    position: relative;
+    padding: 20px;
+    letter-spacing: 3px;
+    font-weight: 900;
+}
+
+/* <!-- 2 --> */
+.storyBrand .story_content .story_box{
+    position: relative;
+}
+
+.storyBrand .story_content .story_box .sto_img{
+    position: relative;
+    max-width: 100%;
+    margin: 20px 0px 20px 0px;
+}
+
+.storyBrand .story_content .story_box .sto_img:nth-child(1){
+    background: #FFC9C9;
+    border-radius: 20px;
+}
+
+.storyBrand .story_content .story_box .sto_img img{
+    width: 100%;
+}
+/* END */
 
 @media screen and (min-width:200px) and (max-width:1024px) {
     .home {
