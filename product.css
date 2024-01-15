@@ -269,11 +269,23 @@ li .dropdown {
     justify-content: center;
 }
 
+.productContainer .rightProductText .img_box{
+    display: flex;
+    flex-direction: row;
+    max-width: 400px;
+}
+
+.productContainer .rightProductText .img_box img{
+    max-width: 400px;
+    margin: 20px;
+}
+
 .productContainer .rightProductText #rightTopImgtext .imgContent1{
     margin: 50px 0pc 50px 0px;
     height: auto;
     font-size: 2em;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+    text-align: justify;
 }
 
 .productContainer .rightProductText #rightTopImgtext .imgContent2{
@@ -281,6 +293,7 @@ li .dropdown {
     height: auto;
     font-size: 2em;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+    text-align: justify;
 }
 
 .productContainer .rightProductText h1{

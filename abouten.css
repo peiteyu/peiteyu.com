@@ -2,6 +2,12 @@
     height: 140vh;
 }
 
+
+.storyBrand .story_content .story_text{
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
 @media screen and (min-width:200px) and (max-width:1200px) {
     .bg{
         height: 180vh;

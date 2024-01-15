@@ -177,6 +177,7 @@ li .dropdown {
 .company_container .right_company_info .question .questionBox{
     height: auto;
     background-color: #008170;
+    text-align:justify;
 }
 
 .company_container .left_company_info .question h1,
@@ -283,6 +284,7 @@ li .dropdown {
     padding: 20px;
     letter-spacing: 3px;
     font-weight: 900;
+    text-align:justify;
 }
 
 /* <!-- 2 --> */

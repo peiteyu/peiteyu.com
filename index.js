@@ -111,7 +111,7 @@ showImage(currentIndex);
 // 透過ID選擇器選擇元素
 const servicePosition = document.getElementById('service');
 const eatPosition = document.getElementById('eat'); 
-const agentTitle = document.getElementById('agentTitle');
+const agentTitle = document.getElementById('Title');
 const title_onePosition = document.getElementById('title_one');
 const holmes = document.getElementById('holmes');
 const ma = document.getElementById('ma');
