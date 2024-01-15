@@ -25,7 +25,7 @@ body{
 /* --------------- */
 
 .toTop {
-    width: 50px;
+    width: 55px;
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -71,12 +71,12 @@ html {
 
 header{
     width: 100%;
-    height: 100vh;
+    height: 80vh;
 }
 
 .bg{
     width: 100%;
-    height: 100vh;
+    height: 600px;
     background: url(banner-wasabi.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -139,7 +139,7 @@ header{
 
 .left_title{
     position: absolute;
-    bottom:10%;
+    bottom:25%;;
     left:30%;
     transform: translate(-50%,-20%);
     display: flex;
@@ -375,16 +375,36 @@ section{
 
 .container_see .wasabi_brief_intro{
     max-width: 77.77%;
-    min-height: 1400px;
+    height: auto;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 20px;
     margin-top: 60px;
+    display: flex;
 }
 
+
 .container_see .wasabi_brief_intro .wasabi_text{
+    width: auto;
+    height: auto;
     color: #FFFFFF;
+}
+
+.container_see .wasabi_brief_intro .wasabi_text h1{
+    font-size: 3em;
+    font-weight: 900;
+    margin: 0px 0px 0px 20px;
+    text-align: center;
+}
+
+.container_see .wasabi_brief_intro .wasabi_text p{
+    font-size: 1.5em;
+    margin: 20px;
+    line-height: 2;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+    text-align: center;
 }
 
 .container_see .wasabi_brief_intro .wasabi_text .grow_img{
@@ -435,31 +455,6 @@ section{
     max-width: 100%;
     left: 40px;
 }
-
-.container_see .wasabi_brief_intro .wasabi_text{
-    width: auto;
-    height: auto;
-    position: absolute;
-    top:150px;
-    left: 20px;
-}
-
-.container_see .wasabi_brief_intro .wasabi_text h1{
-    font-size: 3em;
-    font-weight: 900;
-    margin: 0px 0px 0px 20px;
-    text-align: center;
-}
-
-.container_see .wasabi_brief_intro .wasabi_text p{
-    font-size: 1.5em;
-    margin: 20px;
-    line-height: 2;
-    letter-spacing: 1.5px;
-    color: #ffffff;
-    text-align: center;
-}
-
 
 .container_see .function_explanation{
     width: auto;
@@ -619,7 +614,7 @@ section .card_container{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 200px;
 }
 
 section .card_container .card_container_info{
@@ -938,6 +933,21 @@ section .card_container .card_container_info:hover p{
     justify-content: center;
     color: #f1f1f1;
 }
+/* 新設定 */
+@media screen and (min-width:600px) and (max-width:1021px){
+    header{
+        height: 50vh;
+    }
+
+    .bg{
+        height: 300px;
+    }
+
+    .left_title{
+        top:40%;
+    }
+
+}
 
 @media screen and (min-width:200px) and (max-width:1021px) {
     .home {
@@ -1002,6 +1012,7 @@ section .card_container .card_container_info:hover p{
         position: absolute;
         top: -70px;
         left: 70px;
+        z-index: -999;
     }
 
     .left_title {
@@ -1159,15 +1170,16 @@ section .card_container .card_container_info:hover p{
         height: 0px;
     }
 
+    .Copyright span{
+        text-align: center;
+        font-size: 10px;
+    }
 
 }
 
-@media screen and (min-width:360px) and (max-width:430px){
-    .bg{
-        background-size: cover;
-        background-position: -490px;
-    }
+/* 手機版面 */
 
+@media screen and (min-width:360px) and (max-width:430px){
     .more_information{
         left: 0%;
         transform: translateX(0%);
@@ -1184,5 +1196,20 @@ section .card_container .card_container_info:hover p{
     .listen_info .listen_info_box{
         height: 570px;
         justify-content: center;
+    } 
+
+    header{
+        height: 35vh;
     }
+
+    .bg{
+        height: 385px;
+    }
+
+    .left_title{
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
 }

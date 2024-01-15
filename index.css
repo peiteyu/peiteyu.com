@@ -980,19 +980,6 @@ section {
     background: #6100FF;
 }
 
-.more_information .info_contact .medium1.right span:nth-child(2) {
-    border-radius: 10px;
-    text-align: center;
-    padding: 5px;
-    background: #6100FF;
-}
-
-.more_information .info_contact .medium2.right span:nth-child(2) {
-    border-radius: 10px;
-    padding: 5px;
-    text-align: center;
-    background: #6100FF;
-}
 
 .more_information .cut_line {
     width: 6px;
@@ -1021,7 +1008,7 @@ section {
 
 @media screen and (min-width:1000px) and (max-width:1400px) {
     .left_title {
-        left: 30%;
+        left: 35%;
         animation: 1s out;
         transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
     }
@@ -1032,86 +1019,34 @@ section {
         }
     
         100% {
-            left: 30%;
+            left: 35%;
         }
     }
+
+    .eat_title {
+        left: 20%;
+    }
+    
 }
 
-@media screen and (min-width:858px) and (max-width:1300px) {
-    .container_see .function_explanation .human_img {
-        width: 130px;
-        height: 290px;
+@media screen and (min-width:431px) and (max-width:999px) {
+    .Technology_Agent_title h1{
+        font-size: 3em;
     }
 
-    .function_explanation .humaninfo {
-        font-size: 0.5em;
+    .container_eat::before{
+        background: #ffabab;
     }
 
-    .function_explanation .human {
-        max-width: 530px;
+    .eat_title{
+        font-size:4em;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
-    .function_explanation .humaninfo .human_Age_info {
-        top: 0px;
-    }
-
-    .function_explanation .humaninfo .human_Sugar_info {
-        top: 12px;
-    }
-
-    .function_explanation .humaninfo .human_Se_info {
-        top: 20px;
-        left: -63px;
-    }
-
-    .function_explanation .humaninfo .human_C_info {
-        top: 37px;
-        left: -148px;
-    }
-
-    section .card_container .card_container_info {
-        max-width: 200px;
-        min-height: 450px;
-    }
-
-    section .card_container .card_container_info:hover p {
-        font-size: 0.8em;
-    }
-
-    .container_eat .eat_title {
-        font-size: 4em;
-    }
-
-    .container_eat .eat_subtitle {
-        width: auto;
-    }
-
-    .container_eat .eat_subtitle p {
-        width: 318px;
-    }
-
-    .container_eat .eat_subtitle {
-        width: 600px;
-        font-size: 0.8em;
-        position: absolute;
-        right: 0%;
-        left: 25%;
-    }
-
-    .container_find .outside_sea {
-        top: 50%;
-    }
-
-    .container_listen {
-        height: auto;
-    }
-
-    .container_listen .listen_info {
-        height: auto;
-    }
-
-    .container_environment .img_enviroment_box {
-        max-height: 712px;
+    .eat_title span:nth-child(2){
+        opacity: 0;
     }
 }
 
@@ -1340,10 +1275,24 @@ section {
     }
 }
 
+/* 手機版面 */
 @media screen and (min-width:360px) and (max-width:430px){
     .eat_title {
-        font-size: 2em;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2.6em;
     }
+
+    .eat_title span:nth-child(2){
+        opacity: 0;
+    }
+
+
+    .container_eat::before{
+        background: #ffabab;
+    }
+   
     #s1 .left_section_title{
         height: 235px;
     }
@@ -1351,6 +1300,7 @@ section {
     .Technology_Agent_title h1{
         font-size: 2rem;
     }
+    
 
     .container_eat .left_section_title,
     .container_listen .left_section_title,
@@ -1363,7 +1313,9 @@ section {
 
     .container_find .find_info .find_map {
         max-width: 90%;
-        height: 353px;
+        top:40%;
+        left: 50%;
+        transform: translate(-50%,-45%);
     }
 
     .container_environment .img_enviroment_box{
@@ -1381,5 +1333,6 @@ section {
 
     .Copyright span{
         text-align: center;
+        font-size: 10px;
     }
 }

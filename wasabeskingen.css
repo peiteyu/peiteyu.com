@@ -71,12 +71,12 @@ html {
 
 header{
     width: 100%;
-    height: 100vh;
+    height: 80vh;
 }
 
 .bg{
     width: 100%;
-    height: 100vh;
+    height: 600px;
     background: url(banner-wasabi.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -373,7 +373,7 @@ section{
 
 .container_see .wasabi_brief_intro{
     max-width: 77.77%;
-    min-height: 1500px;
+    height: auto;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -437,8 +437,6 @@ section{
 .container_see .wasabi_brief_intro .wasabi_text{
     width: auto;
     height: auto;
-    position: absolute;
-    top:150px;
 }
 
 .container_see .wasabi_brief_intro .wasabi_text h1{
@@ -682,7 +680,7 @@ section .card_container .card_container_info .card_info_subtitle p{
     margin: 20px;
     transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
     opacity: 0;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 2;
 }
 
@@ -945,9 +943,37 @@ section .card_container .card_container_info:hover p{
     color: #f1f1f1;
 }
 
-@media screen and (min-width:360px) and (max-width:430px) {
+/* 新設定 */
+@media screen and (min-width:600px) and (max-width:1021px){
+    header{
+        height: 50vh;
+    }
+
+    .bg{
+        height: 300px;
+    }
+
+    .left_title{
+        top:40%;
+    }
 
 }
+
+@media screen and (min-width:430px) and (max-width:600px){
+    header{
+        height: 35vh;
+    }
+
+    .bg{
+        height: 385px;
+    }
+
+    .left_title{
+        top: 42%;
+        transform: translate(-50%,-50%);
+    }
+}
+
 
 @media screen and (min-width:200px) and (max-width:1021px) {
     .home {
@@ -1180,14 +1206,16 @@ section .card_container .card_container_info:hover p{
     .more_information .cut_line {
         height: 0px;
     }
+
+    .Copyright span{
+        text-align: center;
+        font-size: 10px;
+    }
 }
 
-@media screen and (min-width:360px) and (max-width:430px){
-    .bg{
-        background-size: cover;
-        background-position: -490px;
-    }
+/* 手機版面 */
 
+@media screen and (min-width:360px) and (max-width:430px){
     .more_information{
         left: 0%;
         transform: translateX(0%);
@@ -1216,5 +1244,19 @@ section .card_container .card_container_info:hover p{
 
     .container_see .wasabi_brief_intro .wasabi_text h1{
         font-size: 2em;
+    }
+
+    header{
+        height: 35vh;
+    }
+
+    .bg{
+        height: 385px;
+    }
+
+    .left_title{
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
     }
 }
