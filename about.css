@@ -298,9 +298,17 @@ li .dropdown {
     margin: 20px 0px 20px 0px;
 }
 
-.storyBrand .story_content .story_box .sto_img:nth-child(1){
+.storyBrand .story_content .story_box .sto_img{
     background: #FFC9C9;
     border-radius: 20px;
+}
+
+.storyBrand .story_content .story_box .story_text{
+    color: #fd1e1e;
+}
+
+.storyBrand .story_content .story_box .story_text p{
+    padding: 10px;
 }
 
 .storyBrand .story_content .story_box .sto_img img{

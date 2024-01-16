@@ -241,7 +241,7 @@ section {
     flex-direction: column;
     align-items: center;
     color: #000000;
-    position:relative;
+    position:absolute;
     left: 10px;
     background: #ffffff;
     letter-spacing: 2px;
@@ -266,10 +266,11 @@ section {
 /* 種植地 */
 
 .Introduction {
+    width: auto;
     position:relative;
     top: 10%;
-    left: 90%;
-    transform: translateX(-50%);
+    left: 50%;
+    /* transform: translateX(-50%); */
     color: #ffffff;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
     transition-delay: 0.5s;
@@ -287,6 +288,7 @@ section {
     flex-wrap: wrap;
     position: relative;
     margin: auto;
+    justify-content: center;
 }
 
 #s1 .boxfor_content .plant_img{
@@ -318,7 +320,7 @@ section {
 
 .boxfor_content .plant_gallery{
     max-width: 980px;
-    margin-top: 30px;
+    margin-top: 190px;
     text-align: center;
     font-size: 24px;
 }
@@ -510,6 +512,7 @@ section {
     top: 100px;
     right: 50px;
     background: #0F0F0F;
+    border-radius: 10px;
 }
 
 /* 真實回饋 */
@@ -866,6 +869,8 @@ section {
 
 .container_environment .img_enviroment_box img {
     width: 100%;
+    padding: 10px;
+
     position: absolute;
     opacity: 0;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
