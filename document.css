@@ -266,11 +266,7 @@ li .dropdown {
     width: 2%;
 }
 
-@media screen and (min-width:200px) and (max-width:1024px) {
-
-}
-
-@media screen and (min-width:200px) and (max-width:1024px) {
+@media screen and (min-width:0px) and (max-width:1024px) {
     .home {
         top: 10px;
         left: -50px;
@@ -337,5 +333,11 @@ li .dropdown {
         position: absolute;
         top: -70px;
         left: 70px;
+    }
+
+    .document_container {
+        left: 0px;
+        transform: translate(0,0);
+        margin: auto;
     }
 }
