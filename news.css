@@ -146,6 +146,14 @@ html {
 .news-scrapbook-box-old .news-scrapbook-title-box-old{
     position: relative;
     margin-top: 50px;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
+}
+
+.news-scrapbook-box-old .news-scrapbook-title-box-old:hover{
+    background: #FFC9C9;
+    border-radius: 10px 0px 10px 0px;
+    padding: 10px;
+    color: rgb(250, 0, 0);
 }
 
 .news-scrapbook-box-old .news-scrapbook-title-box-old h1{
