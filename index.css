@@ -269,7 +269,7 @@ section {
     width: auto;
     position:relative;
     top: 10%;
-    left: 85%;
+    left: 90%;
     /* transform: translateX(-50%); */
     color: #ffffff;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
@@ -1061,6 +1061,10 @@ section {
 
     .eat_title {
         left: 20%;
+    }
+
+    .Introduction{
+        left: 85%;
     }
     
 }

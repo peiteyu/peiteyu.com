@@ -169,6 +169,8 @@ header{
 .left_title h6{
     font-size: 2rem;
     font-weight: 500;
+    border-radius: 5px;
+    padding: 2px;
     background: #44aacc;
     color: #ffffff;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -287,7 +289,8 @@ section{
     font-weight: 500;
     font-size: 1.5em;
     z-index: 2;
-    border-radius: 0px 0px 20px 20px;
+    border-radius: 20px 0px 20px 0px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
 }
 
 .container_see .left_section_title #see{
@@ -364,6 +367,7 @@ section{
 .container_see .Preface img{
     padding: 20px;
     width: 40%;
+    border-radius: 30px;
 }
 
 .container_see #container_p{
@@ -384,6 +388,7 @@ section{
     border-radius: 20px;
     margin-top: 60px;
     display: flex;
+    flex-direction: column;
 }
 
 
@@ -458,11 +463,61 @@ section{
     left: 40px;
 }
 
+.container_see .wasabi_brief_intro .wasabi_shape_introduction{
+    position: relative;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container_see .wasabi_brief_intro .wasabi_shape_introduction h1{
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+    font-size: 48px;
+    color: #f1f1f1;
+}
+
+.container_see .wasabi_brief_intro .wasabi_shape_introduction .shape_box{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.container_see .wasabi_brief_intro .wasabi_shape_introduction .shape_wasabi{
+    position: relative;
+    max-width: 600px;
+    height: auto;
+}
+
+.container_see .wasabi_brief_intro .wasabi_shape_introduction .shape_wasabi img{
+    max-width: 100%;
+    height: auto;
+}
+
+.container_see .wasabi_brief_intro .wasabi_shape_introduction p{
+    max-width: 500px;
+    margin: auto;
+    text-align: justify;
+    padding: 20px;
+    font-size: 24px;
+    color: #f1f1f1;
+    font-weight: 700;
+}
+
+.container_see .wasabi_brief_intro .wasabi_shape_introduction p span{
+    color: #54ffe8;
+    font-size: 30px;
+}
+
 .container_see .function_explanation{
     width: auto;
-    height: auto;
+    height:rgb(255, 0, 0);
     position: relative;
-    top: 0px;
+    margin-top: 100px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -525,7 +580,7 @@ section{
 }
 
 .function_explanation .human .ageInfo .cricle_img{
-    width: 50px;
+    min-width: 50px;
     height: 50px;
     display: flex;
     align-items: center;
@@ -936,7 +991,7 @@ section .card_container .card_container_info:hover p{
     color: #f1f1f1;
 }
 /* 新設定 */
-@media screen and (min-width:600px) and (max-width:1021px){
+@media screen and (min-width:430px) and (max-width:1021px){
     header{
         height: 50vh;
     }
@@ -951,7 +1006,7 @@ section .card_container .card_container_info:hover p{
 
 }
 
-@media screen and (min-width:200px) and (max-width:1021px) {
+@media screen and (min-width:0px) and (max-width:1021px) {
     .home {
         top: -12px;
         left: -10px;
@@ -1034,12 +1089,12 @@ section .card_container .card_container_info:hover p{
     }
 
     .left_title h1 {
-        font-size: 3em;
+        font-size: 2.5em;
     }
 
-    .left_title h4,
     .left_title h6 {
-        font-size: 1.5em;
+        width: 250px;
+        font-size: 1em;
     }
 
     .container_see p {
@@ -1047,8 +1102,15 @@ section .card_container .card_container_info:hover p{
     }
 
     .container_see .left_section_title {
+        width: 45px;
+        height: 229px;
+        font-size: 1em;
         top: 0px;
-        height: 300px;
+        border-radius:20px 0px 20px 0px;
+    }
+
+    .container_see .left_section_title .top_word::before{
+        left: 15px;
     }
 
     @keyframes slideInLeft {
@@ -1073,13 +1135,45 @@ section .card_container .card_container_info:hover p{
         width: 100%;
     }
 
+    .container_see #container_p{
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .container_see #container_p span{
+        font-size: 22px
+    }
+
+    .container_see .wasabi_brief_intro .wasabi_text .grow_img h1,
+    .container_see .wasabi_brief_intro .wasabi_text h1{
+        font-size: 26px
+    }
+
+    .container_see .wasabi_brief_intro .wasabi_text p{
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .container_see .wasabi_brief_intro .wasabi_shape_introduction h1{
+        font-size: 24px;
+    }
+
+    .container_see .wasabi_brief_intro .wasabi_shape_introduction p{
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .container_see .wasabi_brief_intro .wasabi_shape_introduction p span{
+        font-size: 16px;
+    }
+
+    .container_see .function_explanation .title_function{
+        font-size: 1em;
+    }
+
     .container_see .function_explanation .human_img {
         width: 110px;
         height: 276px;
-    }
-
-    .container_see .function_explanation {
-        top: 88px; 
     }
 
     .function_explanation .humaninfo {
@@ -1123,25 +1217,6 @@ section .card_container .card_container_info:hover p{
         min-height: 200px;
     }
 
-    .listen_share{
-        font-size: 2em;
-        position: relative;
-    }
-
-    .listen_info {
-        height: auto;
-    }
-
-    .listen_info .listen_info_box{
-        width: 600px;
-        height: auto;
-        justify-content: center;
-    }
-
-    .container_environment .img_enviroment_box .img_title {
-        top: 10%;
-        font-size: 2em;
-    }
 
     .more_information .top_time {
         font-size: 0.6em;
@@ -1207,13 +1282,21 @@ section .card_container .card_container_info:hover p{
     }
 
     .bg{
-        height: 385px;
+        max-height: 120px;
     }
 
     .left_title{
-        top: 35%;
-        left: 50%;
-        transform: translate(-50%,-50%);
+        top: 30%;
+        transform: translate(-50%,-20%);
+    }
+
+    @keyframes out{
+        0%{
+            left: 10%;
+        }
+        100%{
+            left: 50%;
+        }
     }
 
 }

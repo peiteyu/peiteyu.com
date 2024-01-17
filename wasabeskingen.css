@@ -25,7 +25,7 @@ body{
 /* --------------- */
 
 .toTop {
-    width: 50px;
+    width: 55px;
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -139,7 +139,7 @@ header{
 
 .left_title{
     position: absolute;
-    bottom:10%;
+    bottom:25%;;
     left:30%;
     transform: translate(-50%,-20%);
     display: flex;
@@ -159,6 +159,7 @@ header{
         left: 30%;
     }
 }
+
 .left_title h1{
     font-size: 4rem;
     font-weight: 800;
@@ -168,11 +169,12 @@ header{
 .left_title h6{
     font-size: 2rem;
     font-weight: 500;
-    width: 100%;
+    border-radius: 5px;
+    padding: 2px;
     background: #44aacc;
     color: #ffffff;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    animation: test cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+    animation: test cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
 }
 
 @keyframes test {
@@ -194,6 +196,7 @@ header{
     z-index: 999;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
     font-weight: 900;
+    
 }
   
 .navbar #menu{
@@ -256,6 +259,7 @@ li .dropdown {
 }
 
 /* 設定所有section樣式 */
+
 section{
     width: 100%;
     height: auto;
@@ -273,7 +277,7 @@ section{
 
 .container_see .left_section_title{
     width: 65px;
-    height: 500px;
+    height: 290px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -283,9 +287,10 @@ section{
     background: #ffffff;
     letter-spacing: 2px;
     font-weight: 500;
-    font-size: 1em;
+    font-size: 1.5em;
     z-index: 2;
-    border-radius: 0px 0px 20px 20px;
+    border-radius: 20px 0px 20px 0px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
 }
 
 .container_see .left_section_title #see{
@@ -353,7 +358,7 @@ section{
 .container_see .Preface p{
     width: 60%;
     margin-top: 60px;
-    font-size: 1em;
+    font-size: 1.5em;
     line-height: 2;
     letter-spacing: 1.5px;
     z-index: 2;
@@ -362,6 +367,7 @@ section{
 .container_see .Preface img{
     padding: 20px;
     width: 40%;
+    border-radius: 30px;
 }
 
 .container_see #container_p{
@@ -380,10 +386,31 @@ section{
     transform: translateX(-50%);
     border-radius: 20px;
     margin-top: 60px;
+    display: flex;
+    flex-direction: column;
 }
 
+
 .container_see .wasabi_brief_intro .wasabi_text{
+    width: auto;
+    height: auto;
     color: #FFFFFF;
+}
+
+.container_see .wasabi_brief_intro .wasabi_text h1{
+    font-size: 3em;
+    font-weight: 900;
+    margin: 0px 0px 0px 20px;
+    text-align: center;
+}
+
+.container_see .wasabi_brief_intro .wasabi_text p{
+    font-size: 1.5em;
+    margin: 20px;
+    line-height: 2;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+    text-align: center;
 }
 
 .container_see .wasabi_brief_intro .wasabi_text .grow_img{
@@ -435,33 +462,61 @@ section{
     left: 40px;
 }
 
-.container_see .wasabi_brief_intro .wasabi_text{
-    width: auto;
+.container_see .wasabi_brief_intro .wasabi_shape_introduction{
+    position: relative;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container_see .wasabi_brief_intro .wasabi_shape_introduction h1{
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+    font-size: 48px;
+    color: #f1f1f1;
+}
+
+.container_see .wasabi_brief_intro .wasabi_shape_introduction .shape_box{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.container_see .wasabi_brief_intro .wasabi_shape_introduction .shape_wasabi{
+    position: relative;
+    max-width: 600px;
     height: auto;
 }
 
-.container_see .wasabi_brief_intro .wasabi_text h1{
-    font-size: 3em;
-    font-weight: 900;
-    margin: 0px 0px 0px 20px;
-    text-align: center;
-    color: #FFF2D8;
+.container_see .wasabi_brief_intro .wasabi_shape_introduction .shape_wasabi img{
+    max-width: 100%;
+    height: auto;
 }
 
-.container_see .wasabi_brief_intro .wasabi_text p{
-    font-size: 1.5em;
-    margin: 20px;
-    line-height: 2;
-    letter-spacing: 1.5px;
-    color: #ffffff;
-    text-align: center;
+.container_see .wasabi_brief_intro .wasabi_shape_introduction p{
+    max-width: 500px;
+    margin: auto;
+    text-align: justify;
+    padding: 20px;
+    font-size: 24px;
+    color: #f1f1f1;
+    font-weight: 700;
+}
+
+.container_see .wasabi_brief_intro .wasabi_shape_introduction p span{
+    color: #54ffe8;
+    font-size: 30px;
 }
 
 .container_see .function_explanation{
     width: auto;
-    height: auto;
+    height:rgb(255, 0, 0);
     position: relative;
-    top: 0px;
+    margin-top: 100px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -481,7 +536,7 @@ section{
 
 .container_see .function_explanation .human_img{
     width: 250px;
-    height: 600px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center
@@ -501,12 +556,9 @@ section{
 }
    
 .function_explanation .humaninfo{
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
+    min-height: 660px;
     flex-wrap: wrap;
-    color: rgb(255, 255, 255);
-    justify-content: space-around;
+    color: rgb(255, 255, 255)
 }
 
 .function_explanation .human{
@@ -527,7 +579,7 @@ section{
 }
 
 .function_explanation .human .ageInfo .cricle_img{
-    width: 50px;
+    min-width: 50px;
     height: 50px;
     display: flex;
     align-items: center;
@@ -547,19 +599,19 @@ section{
     font-size: 3em;
     font-weight: 900;
 }
-
+/* 
 .function_explanation .human .ageInfo .content .cut_line{
     width: 100px;
     height: 2px;
     background: #000000;
-}
+} */
 
 .function_explanation .human .ageInfo .content .bottom_text{
     font-size: 1.5em;
 }
 
 .function_explanation .human.human_Age_info .line{
-    width:240px;
+    width:300px;
     height: 5px;
     border-radius: 2px;
     background: #FDF0F0;
@@ -567,19 +619,19 @@ section{
 
 .function_explanation .humaninfo .human_Age_info{
     position: relative;
-    top: 0px;
+    top: 35px;
     left: -50px;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
 }
 
 .function_explanation .humaninfo .human_Sugar_info{
     position: relative;
-    top: 0px;
-    left: 15px;
+    top: 70px;
+    left: 10px;
 }
 
 .function_explanation .human.human_Sugar_info .line{
-    width: 0px;
+    width: 115px;
     height: 5px;
     border-radius: 2px;
     background: #F1B4BB;
@@ -587,8 +639,8 @@ section{
 
 .function_explanation .humaninfo .human_Se_info{
     position: relative;
-    top: 0px;
-    left: -25px;
+    top: 105px;
+    left: 10px;
 }
 
 .function_explanation .human.human_Se_info .line{
@@ -600,12 +652,12 @@ section{
 
 .function_explanation .humaninfo .human_C_info{
     position: relative;
-    top: 0px;
-    left: -60px;
+    top: 140px;
+    left: -120px;
 }
 
 .function_explanation .human.human_C_info .line{
-    width:190px;
+    width:300px;
     height: 5px;
     border-radius: 2px;
     background: #132043;
@@ -618,7 +670,7 @@ section .card_container{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 200px;
 }
 
 section .card_container .card_container_info{
@@ -638,12 +690,10 @@ section .card_container .card_container_info{
 
 section .card_container .card_container_info.Img1{
     background: url(食_植物.jpg);
-    background-size: cover;
 }
 
 section .card_container .card_container_info.Img2{
     background: url(用_異.jpg);
-    background-size: cover;
 }
 
 section .card_container .card_container_info.Img3{
@@ -676,12 +726,12 @@ section .card_container .card_container_info .card_info_subtitle p{
     width: auto;
     height: auto;
     color: #ffffff;
-    text-align: center;
+    text-align:center;
     filter: blur(0px);
     margin: 20px;
     transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
     opacity: 0;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 2;
 }
 
@@ -695,7 +745,6 @@ section .card_container .card_container_info:hover p{
     z-index: 999;
     color: #ffffff;
     background: rgba(0, 0, 0, 0.63);
-    background: blur(20px);
     padding: 20px;
     border-radius: 10px;
 }
@@ -720,8 +769,6 @@ section .card_container .card_container_info:hover p{
     position: relative;
     text-align: center;
     margin: 50px;
-    letter-spacing: 1.5px;
-    line-height: 2;
 }
 
 .listen_share p span{
@@ -732,7 +779,7 @@ section .card_container .card_container_info:hover p{
 
 
 .listen_info{
-    max-width: 95%;
+    width: 100%;
     height: auto;
     position: relative;
     display: flex;
@@ -779,7 +826,7 @@ section .card_container .card_container_info:hover p{
 
 .listen_info .listen_info_box .box1{
     width: 200px;
-    height: auto;
+    height: 200px;
     border-radius: 20px;
     position: relative;
     display: flex;
@@ -830,7 +877,6 @@ section .card_container .card_container_info:hover p{
     height: 600px;
     background: #008170;
     margin: 20px;
-    position: relative;
     box-shadow: 13px 16px 10px 0px rgba(0, 0, 0, 0.53);
     display: flex;
     align-items: center;
@@ -858,6 +904,7 @@ section .card_container .card_container_info:hover p{
 .more_information .info_message ul li img{
     width: 100%;
 }
+
 .more_information .info_contact .top_en_title{
     font-size: 2em;
     display: flex;
@@ -881,7 +928,8 @@ section .card_container .card_container_info:hover p{
 .more_information .info_contact .medium1,
 .more_information .info_contact .medium2,
 .more_information .info_contact .bottom_text{
-    font-size: 1em;
+    font-size: 1.5em;
+    font-weight: 400;
 }
 
 .more_information .info_contact .top_en_title,
@@ -897,7 +945,7 @@ section .card_container .card_container_info:hover p{
 .more_information .info_contact.right{
     width: auto;
     height: auto;
-    color: #ffffff;
+    color: hsl(0, 0%, 100%);
 }
 
 .more_information .info_contact .top_en_title .dot.right{
@@ -905,16 +953,12 @@ section .card_container .card_container_info:hover p{
 }
 
 .more_information .info_contact .medium1.right span:nth-child(2){
-    width: 84px;
-    height: 26px;
     border-radius: 10px;
     text-align: center;
     background: #6100FF;
 }
 
 .more_information .info_contact .medium2.right span:nth-child(2){
-    width: 84px;
-    height: 26px;
     border-radius: 10px;
     text-align: center;
     background: #6100FF;
@@ -931,10 +975,11 @@ section .card_container .card_container_info:hover p{
     width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     position: relative;
+    justify-content: space-evenly;
     align-content: center;
-    justify-content: center;
-    margin-top: 40px;
+    margin-top: 55px;
 }
 
 .Copyright span{
@@ -943,9 +988,8 @@ section .card_container .card_container_info:hover p{
     justify-content: center;
     color: #f1f1f1;
 }
-
 /* 新設定 */
-@media screen and (min-width:600px) and (max-width:1021px){
+@media screen and (min-width:430px) and (max-width:1021px){
     header{
         height: 50vh;
     }
@@ -960,23 +1004,7 @@ section .card_container .card_container_info:hover p{
 
 }
 
-@media screen and (min-width:430px) and (max-width:600px){
-    header{
-        height: 35vh;
-    }
-
-    .bg{
-        height: 385px;
-    }
-
-    .left_title{
-        top: 42%;
-        transform: translate(-50%,-50%);
-    }
-}
-
-
-@media screen and (min-width:200px) and (max-width:1021px) {
+@media screen and (min-width:0px) and (max-width:1021px) {
     .home {
         top: -12px;
         left: -10px;
@@ -1059,12 +1087,12 @@ section .card_container .card_container_info:hover p{
     }
 
     .left_title h1 {
-        font-size: 3em;
+        font-size: 2.5em;
     }
 
-    .left_title h4,
     .left_title h6 {
-        font-size: 1.5em;
+        width: 250px;
+        font-size: 1em;
     }
 
     .container_see p {
@@ -1072,8 +1100,15 @@ section .card_container .card_container_info:hover p{
     }
 
     .container_see .left_section_title {
+        width: 45px;
+        height: 229px;
+        font-size: 1em;
         top: 0px;
-        height: 500px;
+        border-radius:20px 0px 20px 0px;
+    }
+
+    .container_see .left_section_title .top_word::before{
+        left: 15px;
     }
 
     @keyframes slideInLeft {
@@ -1098,8 +1133,40 @@ section .card_container .card_container_info:hover p{
         width: 100%;
     }
 
-    .container_see .wasabi_brief_intro .wasabi_text .grow_img img{
-        width: 30%;
+    .container_see #container_p{
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .container_see #container_p span{
+        font-size: 22px
+    }
+
+    .container_see .wasabi_brief_intro .wasabi_text .grow_img h1,
+    .container_see .wasabi_brief_intro .wasabi_text h1{
+        font-size: 26px
+    }
+
+    .container_see .wasabi_brief_intro .wasabi_text p{
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .container_see .wasabi_brief_intro .wasabi_shape_introduction h1{
+        font-size: 24px;
+    }
+
+    .container_see .wasabi_brief_intro .wasabi_shape_introduction p{
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .container_see .wasabi_brief_intro .wasabi_shape_introduction p span{
+        font-size: 16px;
+    }
+
+    .container_see .function_explanation .title_function{
+        font-size: 1em;
     }
 
     .container_see .function_explanation .human_img {
@@ -1107,24 +1174,13 @@ section .card_container .card_container_info:hover p{
         height: 276px;
     }
 
-    .container_see .function_explanation {
-        top: 0px;
-    }
-
     .function_explanation .humaninfo {
         font-size: 0.6em;
+        min-height: 0;
     }
 
     .function_explanation .human {
-        max-width: 500px;
-    }
-
-    .function_explanation .human .ageInfo .cricle_img{
-        margin: 0px;
-    }
-
-    .function_explanation .human .ageInfo .content{
-        margin-left: 20px;
+        max-width: 465px;
     }
 
     .function_explanation .humaninfo .human_Age_info,
@@ -1134,7 +1190,6 @@ section .card_container .card_container_info:hover p{
         position: relative;
         top: 0;
         left: 0;
-        margin: 0px;
     }
 
     .function_explanation .humaninfo .human_Age_info .line,
@@ -1160,25 +1215,6 @@ section .card_container .card_container_info:hover p{
         min-height: 200px;
     }
 
-    .listen_share{
-        font-size: 2em;
-        position: relative;
-    }
-
-    .listen_info {
-        height: auto;
-    }
-
-    .listen_info .listen_info_box{
-        width: 600px;
-        height: auto;
-        justify-content: center;
-    }
-
-    .container_environment .img_enviroment_box .img_title {
-        top: 10%;
-        font-size: 2em;
-    }
 
     .more_information .top_time {
         font-size: 0.6em;
@@ -1215,6 +1251,7 @@ section .card_container .card_container_info:hover p{
         text-align: center;
         font-size: 10px;
     }
+
 }
 
 /* 手機版面 */
@@ -1228,39 +1265,36 @@ section .card_container .card_container_info:hover p{
     .Copyright span{
         text-align: center;
     }
-    /* 功效 */
+
     .function_explanation .humaninfo{
         align-content: center;
     }
 
-    .container_see .function_explanation{
-        top:70px;
-    }
-
     .listen_info .listen_info_box{
-        height: 670px;
-        justify-content: center
-    }
-
-    section .card_container .card_container_info .card_info_subtitle p{
-        font-size: 0.5em;
-    }
-
-    .container_see .wasabi_brief_intro .wasabi_text h1{
-        font-size: 2em;
-    }
+        height: 570px;
+        justify-content: center;
+    } 
 
     header{
         height: 35vh;
     }
 
     .bg{
-        height: 385px;
+        max-height: 120px;
     }
 
     .left_title{
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%,-50%);
+        top: 30%;
+        transform: translate(-50%,-20%);
     }
+
+    @keyframes out{
+        0%{
+            left: 10%;
+        }
+        100%{
+            left: 50%;
+        }
+    }
+
 }
