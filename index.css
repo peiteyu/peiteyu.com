@@ -269,7 +269,7 @@ section {
     width: auto;
     position:relative;
     top: 10%;
-    left: 50%;
+    left: 85%;
     /* transform: translateX(-50%); */
     color: #ffffff;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
