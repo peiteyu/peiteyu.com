@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&family=Zhi+Mang+Xing&display=swap');
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 }
 
 body{
@@ -227,7 +229,7 @@ li .dropdown {
     flex-direction: column;
     margin: 20px;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
-    font-weight: 800;
+    font-weight: 700;
     align-items: center;
     padding: 5px;
     border-radius: 5px;

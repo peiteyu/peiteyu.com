@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&family=Zhi+Mang+Xing&display=swap');
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 .bg{
     height: 140vh;
 }
