@@ -228,14 +228,6 @@ a{
     width: 400px;
     margin: 10px;
 }
-
-#logo::after{
-    content: '↑點我回首頁';
-    position: absolute;
-    top: 75px;
-    left: 155px;
-    opacity: 0.5;
-}
   
 li .dropdown {
     position:relative;
@@ -377,6 +369,33 @@ section{
     padding: 20px;
     width: 40%;
     border-radius: 30px;
+}
+
+.container_see .Preface .about_tuber{
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+}
+
+.container_see .Preface .about_tuber:hover{
+    transform: scale(1.1);
+}
+
+.container_see .Preface .about_tuber .about_tuber_img{
+    width: 50px;
+    height: 50px;
+}
+
+.container_see .Preface .about_tuber .about_tuber_img img{
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+}
+
+.container_see .Preface .about_tuber span{
+    color: #FFF;
 }
 
 .container_see #container_p{
@@ -1070,17 +1089,6 @@ section .card_container .card_container_info:hover p{
 
     #logo img{
         width: 100%;
-    }
-
-    #logo::after{
-        visibility: hidden;
-    }
-
-    .navbar #menu::before{
-        content: '↑點我回首頁';
-        opacity: 0.5;
-        position: absolute;
-        top:290px;
     }
 
     .dropdown{
