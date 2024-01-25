@@ -321,6 +321,7 @@ section {
     letter-spacing: 2px;
     padding: 30px;
     font-size: 22px;
+    text-align: justify;
 }
 
 .boxfor_content .plant_text .about_plant{
