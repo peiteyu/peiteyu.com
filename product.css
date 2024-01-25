@@ -478,9 +478,23 @@ li .dropdown {
         align-items: center;
     }
 
+    #logo{
+        margin-bottom: 20px;
+    }
+
     #logo img{
         width: 100%;
-        scale: 2;
+    }
+
+    #logo::after{
+        visibility: hidden;
+    }
+
+    .navbar #menu::before{
+        content: '↑點我回首頁';
+        opacity: 0.5;
+        position: absolute;
+        top:160px;
     }
 
     .dropdown{
