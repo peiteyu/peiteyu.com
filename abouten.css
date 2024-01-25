@@ -10,17 +10,13 @@
 }
 
 .bg{
-    height: 140vh;
+    height: 100vh;
 }
 
 
 .storyBrand .story_content .story_text{
     letter-spacing: 2px;
     line-height: 30px;
-}
-
-.company_container{
-    top:70px;
 }
 
 .company_container .left_company_info .question h1,

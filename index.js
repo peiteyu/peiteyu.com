@@ -122,17 +122,17 @@ window.addEventListener('scroll', function () {
   // holmes.style.top = windowHeight + "px";
   if (windowHeight >= 250) {
     servicePosition.style.top = "0px"; // 移动元素到頂部
-    agentTitle.style.transform = "translateX(-50%) rotate(0deg) scale(1)";
+    // agentTitle.style.transform = "translateX(-50%) rotate(0deg) scale(1)";
   } else {
     servicePosition.style.top = "-240px";
-    agentTitle.style.transform = "translateX(950px) rotate(45deg) scale(1.2)";
+    // agentTitle.style.transform = "translateX(950px) rotate(45deg) scale(1.2)";
   }
-  if(windowHeight >= 1800){
-    eatPosition.style.top =  "0px";
-  }
-  else{
-    eatPosition.style.top =  "-500px";
-  }
+  // if(windowHeight >= 1800){
+  //   eatPosition.style.top =  "0px";
+  // }
+  // else{
+  //   eatPosition.style.top =  "-500px";
+  // }
   // if(windowHeight >= 1800 && windowHeight <=2760){
   //   title_onePosition.style.opacity = "1";
   //   title_onePosition.style.zIndex = "2";
