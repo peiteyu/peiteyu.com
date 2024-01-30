@@ -119,14 +119,6 @@ a{
     width: 400px;
     margin: 10px;
 }
-
-#logo::after{
-    content: '↑點我回首頁';
-    position: absolute;
-    top: 75px;
-    left: 155px;
-    opacity: 0.5;
-}
   
 li .dropdown {
     position:relative;
@@ -251,6 +243,7 @@ li .dropdown {
     flex-direction: column;
     padding-top: 50px;
     color: #FFF;
+    justify-content: center;
 }
 
 .productContainer .rightProductText .img_box{
@@ -267,7 +260,7 @@ li .dropdown {
 .productContainer .rightProductText #rightTopImgtext .imgContent1{
     margin: 50px 0pc 50px 0px;
     height: auto;
-    font-size: 2em;
+    font-size: 1.5em;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
     text-align: justify;
 }
@@ -275,9 +268,15 @@ li .dropdown {
 .productContainer .rightProductText #rightTopImgtext .imgContent2{
     margin-top: 10px;
     height: auto;
-    font-size: 2em;
+    font-size: 1.5em;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
     text-align: justify;
+}
+
+.productContainer .rightProductText p{
+    font-size: 2em;
+    font-weight: 900;
+    margin: 100px 0px 0px 0px;
 }
 
 .productContainer .rightProductText h1{
@@ -293,14 +292,12 @@ li .dropdown {
 
 .productContainer .rightProductText span{
     margin-bottom: 20px;
-    border-radius: 10px 0px 0px 10px;
     background: #008170;
     color: #ffffff;
     font-weight: 800;
+    text-align: center;
     font-size: 2em;
 }
-
-
 
 .productContainer .rightProductText .goodList .list{
     position: relative;
@@ -309,22 +306,22 @@ li .dropdown {
     align-items: center;
 }
 
-.productContainer .rightProductText .goodList .list .list_dot{
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: #3498db;
+.productContainer .rightProductText .goodList .list:nth-child(1){
+    display: flex;
+    flex-direction: column;
 }
 
 .productContainer .rightProductText .goodList .list p{
     font-size: 2em;
-    margin: 20px 0px 20px 20px;
+    margin: 20px;
+    text-align: justify;
 }
 
-.productContainer .rightProductText p{
-    font-size: 2em;
-    font-weight: 900;
-    margin: 100px 0px 0px 0px;
+.productContainer .rightProductText .goodList .list .hint_p{
+    font-size: 1em;
+    color: #cffff9;
+    margin: 20px;
+    text-align: justify;
 }
 
 
@@ -393,17 +390,6 @@ li .dropdown {
 
     #logo img{
         width: 100%;
-    }
-
-    #logo::after{
-        visibility: hidden;
-    }
-
-    .navbar #menu::before{
-        content: '↑點我回首頁';
-        opacity: 0.5;
-        position: absolute;
-        top:290px;
     }
 
     .dropdown{
@@ -488,13 +474,6 @@ li .dropdown {
 
     #logo::after{
         visibility: hidden;
-    }
-
-    .navbar #menu::before{
-        content: '↑點我回首頁';
-        opacity: 0.5;
-        position: absolute;
-        top:160px;
     }
 
     .dropdown{

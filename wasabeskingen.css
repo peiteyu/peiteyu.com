@@ -230,14 +230,6 @@ a{
     width: 400px;
     margin: 10px;
 }
-
-#logo::after{
-    content: '↑點我回首頁';
-    position: absolute;
-    top: 75px;
-    left: 155px;
-    opacity: 0.5;
-}
   
 li .dropdown {
     position:relative;
@@ -246,7 +238,6 @@ li .dropdown {
 .dropdown-content {
     visibility: hidden;
     position: absolute;
-    transform: translateX(-15%);
     background-color: #f9f9f9;
     width: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -1072,17 +1063,6 @@ section .card_container .card_container_info:hover p{
         width: 100%;
     }
 
-    #logo::after{
-        visibility: hidden;
-    }
-
-    .navbar #menu::before{
-        content: '↑點我回首頁';
-        opacity: 0.5;
-        position: absolute;
-        top:290px;
-    }
-
     .dropdown{
         position: relative;
     }
@@ -1093,7 +1073,6 @@ section .card_container .card_container_info:hover p{
         align-items: center;
         visibility: hidden;
         position: absolute;
-        left: -10%;
         z-index: 999;
     }
 
