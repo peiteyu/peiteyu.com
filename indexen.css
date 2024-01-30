@@ -1282,6 +1282,10 @@ section {
         }
     }
 
+    #s1 .boxfor_content .agent .map_content{
+        flex-direction: column;
+    }
+
     .container_see .left_section_title .top_word::before {
         top: 20px;
         left: 24px;

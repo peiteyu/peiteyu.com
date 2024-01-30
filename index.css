@@ -1416,6 +1416,10 @@ section {
     #s1 .boxfor_content .agent .map_content{
         flex-direction: column;
     }
+
+    #s1 .boxfor_content .agent .map_content ul{
+        flex-direction: column;
+    }
     
     .boxfor_content .plant_gallery img{
         width: 100%;
