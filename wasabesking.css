@@ -536,12 +536,13 @@ section{
 }
 
 .container_see .wasabi_brief_intro .wasabi_shape_introduction .shape_box .hint_p{
-    width: 90%;
-    font-size: 1em;
+    width: auto;
+    font-size: 0.8em;
     color: #cffff9;
     margin: 20px;
     text-align: justify;
     margin: auto;
+    margin-top: 10px;
 }
 
 .container_see .wasabi_brief_intro .wasabi_shape_introduction p span{
@@ -646,7 +647,11 @@ section{
 } */
 
 .function_explanation .human .ageInfo .content .bottom_text{
-    font-size: 1.5em;
+    font-size: 1em;
+}
+
+.function_explanation .human .ageInfo .content .bottom_text span{
+    font-size: 0.5em;
 }
 
 .function_explanation .human.human_Age_info .line{
@@ -691,7 +696,7 @@ section{
 
 .function_explanation .humaninfo .human_C_info{
     position: relative;
-    top: 140px;
+    top: 160px;
     left: -120px;
 }
 
